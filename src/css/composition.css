@@ -3,6 +3,15 @@
 \* ----------------------------------- */
 
 /**
+ * Container
+ */
+
+.container {
+  max-width: var(--size, 60em);
+  margin-inline: auto;
+}
+
+/**
  * Cover
  */
 
