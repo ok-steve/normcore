@@ -27,3 +27,8 @@ ul[role='list'] {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
