@@ -3,6 +3,17 @@
 \* ----------------------------------- */
 
 /**
+ * Cover
+ */
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  min-height: 100vh;
+}
+
+/**
  * Stack
  */
 
