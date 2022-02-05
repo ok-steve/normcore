@@ -1,0 +1,36 @@
+/* ----------------------------------- *\
+  #UTILITIES
+\* ----------------------------------- */
+
+/**
+ * Display
+ */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/**
+ * Flexbox
+ */
+
+.flex-1 {
+  flex: 1;
+}
+
+/**
+ * Spacing
+ */
+
+.gap-01 {
+  gap: 0.75em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  gap: calc(var(--rhythm, 1.5em) / 2);
+}
+
+.gap {
+  gap: 1.5em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  gap: var(--rhythm, 1.5em);
+}
