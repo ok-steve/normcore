@@ -6,6 +6,10 @@
  * Display
  */
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
