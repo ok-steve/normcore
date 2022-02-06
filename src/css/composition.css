@@ -23,6 +23,24 @@
 }
 
 /**
+ * Gallery
+ */
+
+.gallery {
+  --gap: var(--rhythm, 1.5em);
+  --columns: 4;
+  --min: 100px;
+  --basis: max(
+    var(--min),
+    calc((100% - ((var(--columns) - 1) * var(--gap))) / var(--columns))
+  );
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--basis), 1fr));
+  gap: var(--gap);
+}
+
+/**
  * Stack
  */
 
