@@ -19,6 +19,11 @@ html {
   line-height: var(--rhythm, 1.5);
   color: var(--ink, black);
   background-color: var(--paper, white);
+  /* stylelint-disable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /* stylelint-enable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
 }
 
 ol[role='list'],
