@@ -38,3 +38,43 @@
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   gap: var(--rhythm, 1.5em);
 }
+
+/**
+ * Typography
+ */
+
+.scale-02 {
+  font-size: 0.694em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  font-size: calc(1em / var(--scale, 1.2) / var(--scale, 1.2));
+}
+
+.scale-01 {
+  font-size: 0.833em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  font-size: calc(1em / var(--scale, 1.2));
+}
+
+.scale {
+  font-size: 1em;
+}
+
+.scale-1 {
+  font-size: 1.2em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  font-size: calc(1em * var(--scale, 1.2));
+}
+
+.scale-2 {
+  font-size: 1.44em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  font-size: calc(1em * var(--scale, 1.2) * var(--scale, 1.2));
+}
+
+.scale-3 {
+  font-size: 1.728em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  font-size: calc(
+    1em * var(--scale, 1.2) * var(--scale, 1.2) * var(--scale, 1.2)
+  );
+}

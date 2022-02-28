@@ -26,6 +26,42 @@ html {
   /* stylelint-enable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
 }
 
+h1 {
+  font-size: 1.728em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  font-size: calc(
+    1em * var(--scale, 1.2) * var(--scale, 1.2) * var(--scale, 1.2)
+  );
+}
+
+h2 {
+  font-size: 1.44em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  font-size: calc(1em * var(--scale, 1.2) * var(--scale, 1.2));
+}
+
+h3 {
+  font-size: 1.2em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  font-size: calc(1em * var(--scale, 1.2));
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.833em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  font-size: calc(1em / var(--scale, 1.2));
+}
+
+h6 {
+  font-size: 0.694em;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  font-size: calc(1em / var(--scale, 1.2) / var(--scale, 1.2));
+}
+
 ol[role='list'],
 ul[role='list'] {
   padding: 0;
