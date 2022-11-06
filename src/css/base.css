@@ -35,3 +35,12 @@ ul[role='list'] {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
+
+/**
+ * Restrict sizing to the container width.
+ */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
