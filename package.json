@@ -24,16 +24,12 @@
     "css",
     "javascript"
   ],
-  "author": "Steve Cherry <stevenccherry@gmail.com> (https://stevecherry.net)",
+  "author": "Steve Cherry <steve@stevecherry.net> (https://stevecherry.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sccherry/normcore/issues"
   },
   "homepage": "https://github.com/sccherry/normcore#readme",
-  "browserslist": [
-    "defaults",
-    "not IE 11"
-  ],
   "devDependencies": {
     "eslint": "^8.8.0",
     "eslint-config-airbnb-base": "^15.0.0",
