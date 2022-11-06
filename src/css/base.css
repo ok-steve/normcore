@@ -33,6 +33,33 @@ html {
 }
 
 /**
+ * Use a modular scale with ratio of 1.2.
+ */
+h1 {
+  font-size: 1.728em;
+}
+
+h2 {
+  font-size: 1.44em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.833em;
+}
+
+h6 {
+  font-size: 0.694em;
+}
+
+/**
  * Only remove list styles with appropriate accessibility attributes.
  */
 
