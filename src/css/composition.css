@@ -11,3 +11,11 @@
   flex-wrap: wrap;
   gap: 1em;
 }
+
+/**
+ * Stack
+ */
+
+.stack > * + * {
+  margin-block-start: 1.5em;
+}
