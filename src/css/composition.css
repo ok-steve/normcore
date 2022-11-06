@@ -13,6 +13,16 @@
 }
 
 /**
+ * Container
+ */
+
+.container {
+  width: 100%;
+  max-width: 60em;
+  margin-inline: auto;
+}
+
+/**
  * Cover
  */
 
