@@ -8,6 +8,10 @@
   box-sizing: inherit;
 }
 
+* {
+  margin: 0;
+}
+
 /**
  * Add border box sizing in all browsers (opinionated).
  */
