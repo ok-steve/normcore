@@ -18,17 +18,20 @@
 
 /**
  * 1. Use a better default box sizing.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 2. Set the vertical rhythm.
+ * 3. Prevent adjustments of font size after orientation changes in iOS.
  */
 
 html {
   box-sizing: border-box; /* 1 */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+  line-height: 1.5; /* 2 */
   /* stylelint-disable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-text-size-adjust: 100%; /* 2 */
-  text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+  -moz-text-size-adjust: 100%; /* 3 */
+  text-size-adjust: 100%; /* 3 */
   /* stylelint-enable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
 }
 
