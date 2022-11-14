@@ -1,0 +1,25 @@
+/**
+ * Configure a grid by setting the maximum number of columns.
+ */
+
+.grid {
+  --grid-gutter: 1em;
+  --grid-columns: 4;
+  --grid-min: 6em;
+
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(
+      max(
+        var(--grid-min),
+        calc(
+          (100% - ((var(--grid-columns) - 1) * var(--grid-gutter))) /
+            var(--grid-columns)
+        )
+      ),
+      1fr
+    )
+  );
+  gap: var(--grid-gutter);
+}
