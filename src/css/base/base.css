@@ -31,3 +31,17 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* stylelint-enable */
 }
+
+/* ---------------------------------- *\
+   #GROUPING
+\* ---------------------------------- */
+
+/**
+ * Only remove list styles with appropriate accessibility attributes.
+ */
+
+ol[role="list"],
+ul[role="list"] {
+  padding: 0;
+  list-style: none;
+}
