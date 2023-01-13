@@ -23,6 +23,7 @@
 /**
  * 1. Use a better default box-sizing.
  * 2. Set the vertical rhythm.
+ * 3. Prevent adjustments of font size after orientation changes in iOS.
  */
 
 html {
@@ -32,6 +33,11 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* stylelint-enable */
   line-height: 1.5; /* 2 */
+  /* stylelint-disable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
+  -webkit-text-size-adjust: 100%; /* 3 */
+  -moz-text-size-adjust: 100%; /* 3 */
+  text-size-adjust: 100%; /* 3 */
+  /* stylelint-enable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
 }
 
 /* ---------------------------------- *\
