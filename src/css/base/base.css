@@ -13,6 +13,14 @@
 }
 
 /**
+ * Reset all margins.
+ */
+
+* {
+  margin: 0;
+}
+
+/**
  * 1. Use a better default box-sizing.
  */
 
