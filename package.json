@@ -10,10 +10,11 @@
     "lint:css": "stylelint src/css --fix",
     "lint:js": "eslint src/js --fix",
     "lint": "npm run lint:css && npm run lint:js",
+    "build:html": "cp -r docs dist",
     "build:css": "postcss src/css/normcore.css -o dist/css/normcore.css -m",
     "build:js": "rollup -c",
     "prebuild": "npm run clean",
-    "build": "npm run build:css && npm run build:js",
+    "build": "npm run build:html && npm run build:css && npm run build:js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
