@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order",
+    "stylelint-config-prettier"
+  ],
+  "plugins": [
+    "stylelint-no-unsupported-browser-features"
+  ],
+  "rules": {
+    "plugin/no-unsupported-browser-features": [
+      true,
+      {
+        "ignorePartialSupport": true
+      }
+    ]
+  }
+}
