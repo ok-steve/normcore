@@ -1,0 +1,21 @@
+/* ---------------------------------- *\
+   #DOCUMENT
+\* ---------------------------------- */
+
+/**
+ * Inherit box-sizing to allow easier overrides.
+ */
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Use a better default box-sizing.
+ */
+
+html {
+  box-sizing: border-box;
+}
