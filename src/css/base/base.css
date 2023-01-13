@@ -13,9 +13,13 @@
 }
 
 /**
- * Use a better default box-sizing.
+ * 1. Use a better default box-sizing.
  */
 
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; /* 1 */
+  /* stylelint-disable value-keyword-case */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* stylelint-enable */
 }
