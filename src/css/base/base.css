@@ -45,3 +45,11 @@ ul[role="list"] {
   padding: 0;
   list-style: none;
 }
+
+/* ---------------------------------- *\
+   #TEXT
+\* ---------------------------------- */
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
