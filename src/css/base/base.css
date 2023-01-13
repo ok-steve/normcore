@@ -21,6 +21,14 @@
 }
 
 /**
+ * Hide outline on non-keyboard focus.
+ */
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/**
  * 1. Use a better default box-sizing.
  * 2. Set the vertical rhythm.
  * 3. Prevent adjustments of font size after orientation changes in iOS.
