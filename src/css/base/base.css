@@ -94,6 +94,21 @@ ul[role="list"] {
   list-style: none;
 }
 
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: 1em;
+}
+
+dt {
+  font-weight: 700;
+  text-align: end;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
 /* ---------------------------------- *\
    #TEXT
 \* ---------------------------------- */
