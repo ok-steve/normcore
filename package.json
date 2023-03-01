@@ -19,18 +19,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sccherry/normcore.git"
+    "url": "git+https://github.com/ok-steve/normcore.git"
   },
   "keywords": [
     "css",
     "javascript"
   ],
-  "author": "Steve Cherry <steve@stevecherry.net> (https://stevecherry.net)",
+  "author": {
+    "name": "Steve Cherry",
+    "email": "steve@stevecherry.net",
+    "url": "https://stevecherry.net"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sccherry/normcore/issues"
+    "url": "https://github.com/ok-steve/normcore/issues"
   },
-  "homepage": "https://github.com/sccherry/normcore#readme",
+  "homepage": "https://github.com/ok-steve/normcore#readme",
   "devDependencies": {
     "eslint": "^8.31.0",
     "eslint-config-airbnb-base": "^15.0.0",
