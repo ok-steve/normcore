@@ -48,6 +48,16 @@ html {
   /* stylelint-enable */
 }
 
+/**
+ * Smooth scroll, except for find on page.
+ */
+
+@media (prefers-reduced-motion: no-preference) {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
 /* ---------------------------------- *\
    #SECTIONS
 \* ---------------------------------- */
