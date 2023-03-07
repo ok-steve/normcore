@@ -119,6 +119,20 @@ dd {
   grid-column-start: 2;
 }
 
+/**
+ * 1. Add the correct box-sizing in Firefox.
+ * 2. Correct the inheritance of border color in Firefox.
+ * 3. A better looking default horizontal rule.
+ */
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border: 0; /* 3 */
+  /* stylelint-disable-next-line value-keyword-case */
+  border-block-start: 1px solid currentColor; /* 3 */
+}
+
 /* ---------------------------------- *\
    #TEXT
 \* ---------------------------------- */
