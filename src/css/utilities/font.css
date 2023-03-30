@@ -1,0 +1,7 @@
+.font-text {
+  font-family: var(--font-text);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}

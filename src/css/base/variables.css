@@ -1,0 +1,33 @@
+:root {
+  /**
+   * Typography
+   */
+
+  /* stylelint-disable value-keyword-case */
+  --font-text: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* stylelint-enable */
+  --font-display: var(--font-text);
+
+  /**
+   * Modular scale
+   */
+
+  --scale-ratio: 1.2;
+  --scale-0: 1em;
+  --scale-01: calc(var(--scale-0) / var(--scale-ratio));
+  --scale-02: calc(var(--scale-01) / var(--scale-ratio));
+  --scale-1: calc(var(--scale-0) * var(--scale-ratio));
+  --scale-2: calc(var(--scale-1) * var(--scale-ratio));
+  --scale-3: calc(var(--scale-2) * var(--scale-ratio));
+
+  /**
+   * Vertical rhythm
+   */
+
+  --rhythm: 1.5;
+  --space-0: calc(var(--rhythm) * 1rem);
+  --space-01: calc(var(--space-0) * 0.5);
+  --space-1: calc(var(--space-1) * 1.5);
+  --space-2: calc(var(--space-1) * 2);
+}
