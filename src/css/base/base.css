@@ -136,12 +136,22 @@ hr {
   border-block-start: 1px solid currentColor; /* 3 */
 }
 
+pre {
+  font-family: var(--font-mono);
+}
+
 /* ---------------------------------- *\
    #TEXT
 \* ---------------------------------- */
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+code,
+kbd,
+samp {
+  font-family: var(--font-mono);
 }
 
 /* ---------------------------------- *\
