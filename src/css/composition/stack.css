@@ -1,5 +1,3 @@
 .stack > * + * {
-  --space: var(--space-0);
-
-  margin-block-start: var(--space);
+  margin-block-start: var(--stack-space, var(--space-0));
 }

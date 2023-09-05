@@ -1,7 +1,5 @@
 .cluster {
-  --space: var(--space-01);
-
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space);
+  gap: var(--cluster-space, var(--space-01));
 }
