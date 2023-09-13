@@ -1,6 +1,6 @@
-import { terser } from 'rollup-plugin-terser';
+const terser = require('@rollup/plugin-terser');
 
-export default {
+module.exports = {
   input: 'src/js/normcore.js',
   plugins: [terser()],
   output: {
