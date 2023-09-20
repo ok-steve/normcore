@@ -174,3 +174,7 @@ img {
 label {
   display: block;
 }
+
+:where([type="checkbox"], [type="radio"]) ~ label {
+  display: inline;
+}
