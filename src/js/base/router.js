@@ -43,14 +43,14 @@ function mergeHead(toHeadEl) {
 }
 
 async function render(pathname) {
-  document.body.setAttribute('data-state', 'exiting');
+  document.body.setAttribute('data-router-state-value', 'exiting');
 
   const response = await fetchDocument(pathname);
 
   mergeHead(response.head);
 
   document.body.replaceWith(response.body);
-  document.body.removeAttribute('data-state');
+  document.body.removeAttribute('data-router-state-value');
   // Dispatch a fake `DOMContentLoaded` event.
   document.body.dispatchEvent(new Event('DOMContentLoaded'));
 }
@@ -80,25 +80,27 @@ function shouldRouteChange(target) {
 
 let previousUrl = window.location.pathname;
 
-document.addEventListener('click', (e) => {
-  const target = e.target.closest('a');
+if (document.querySelector('[data-controller="router"]')) {
+  document.addEventListener('click', (e) => {
+    const target = e.target.closest('a');
 
-  if (target !== null) {
-    previousUrl = window.location.pathname;
+    if (target !== null) {
+      previousUrl = window.location.pathname;
 
-    if (shouldRouteChange(target)) {
-      window.history.pushState(null, null, target.pathname);
-      render(target.pathname);
-      e.preventDefault();
+      if (shouldRouteChange(target)) {
+        window.history.pushState(null, null, target.pathname);
+        render(target.pathname);
+        e.preventDefault();
+      }
     }
-  }
-});
+  });
 
-window.addEventListener('popstate', (e) => {
-  if (e.target.location.hash || previousUrl === e.target.location.pathname) {
-    return;
-  }
+  window.addEventListener('popstate', (e) => {
+    if (e.target.location.hash || previousUrl === e.target.location.pathname) {
+      return;
+    }
 
-  render(e.target.location);
-  previousUrl = e.target.location.href;
-});
+    render(e.target.location);
+    previousUrl = e.target.location.href;
+  });
+}
