@@ -24,8 +24,8 @@ function mergeHead(toHeadEl) {
   const fromHead = new Set(fromHeadEl.children);
   const toHead = new Set(toHeadEl.children);
 
-  toHead.forEach(toEl => {
-    fromHead.forEach(fromEl => {
+  toHead.forEach((toEl) => {
+    fromHead.forEach((fromEl) => {
       if (fromEl.isEqualNode(toEl)) {
         fromHead.delete(fromEl);
         toHead.delete(toEl);
@@ -33,11 +33,11 @@ function mergeHead(toHeadEl) {
     });
   });
 
-  fromHead.forEach(fromEl => {
+  fromHead.forEach((fromEl) => {
     fromHeadEl.removeChild(fromEl);
-  })
+  });
 
-  toHead.forEach(toEl => {
+  toHead.forEach((toEl) => {
     fromHeadEl.appendChild(toEl);
   });
 }
