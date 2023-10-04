@@ -51,10 +51,14 @@ async function render(pathname) {
 
   document.body.replaceWith(response.body);
   document.body.removeAttribute('data-state');
+  // Dispatch a fake `DOMContentLoaded` event.
+  document.body.dispatchEvent(new Event('DOMContentLoaded'));
 }
 
 function shouldRouteChange(target) {
   return [
+    // A fake `beforeunload` event is cancelled.
+    !window.dispatchEvent(new Event('beforeunload', { cancelable: true })),
     // Target is not a hash
     target.hash === '',
     // Target is not marked as ignored
