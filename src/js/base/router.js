@@ -18,22 +18,28 @@ async function fetchDocument(url, mimeType = 'text/html') {
  * Router
  */
 
-// Diffing the elements would be more robust, but this works.
-function mergeHead(headElement) {
-  const title = document.querySelector('title');
-  const description = document.querySelector('meta[name=description]');
-  const canonical = document.querySelector('link[rel=canonical]');
+// A naive merge implementation
+function mergeHead(toHeadEl) {
+  const fromHeadEl = document.head;
+  const fromHead = new Set(fromHeadEl.children);
+  const toHead = new Set(toHeadEl.children);
 
-  title.textContent = headElement.querySelector('title').textContent;
+  toHead.forEach(toEl => {
+    fromHead.forEach(fromEl => {
+      if (fromEl.isEqualNode(toEl)) {
+        fromHead.delete(fromEl);
+        toHead.delete(toEl);
+      }
+    });
+  });
 
-  description.textContent = headElement.querySelector(
-    'meta[name=description]'
-  ).textContent;
+  fromHead.forEach(fromEl => {
+    fromHeadEl.removeChild(fromEl);
+  })
 
-  canonical.setAttribute(
-    'href',
-    headElement.querySelector('link[rel=canonical]').getAttribute('href')
-  );
+  toHead.forEach(toEl => {
+    fromHeadEl.appendChild(toEl);
+  });
 }
 
 async function render(pathname) {
