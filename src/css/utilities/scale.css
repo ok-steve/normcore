@@ -1,23 +1,23 @@
-.scale-02 {
+.text-02 {
   font-size: var(--scale-02);
 }
 
-.scale-01 {
+.text-01 {
   font-size: var(--scale-01);
 }
 
-.scale-0 {
+.text-0 {
   font-size: var(--scale-0);
 }
 
-.scale-1 {
+.text-1 {
   font-size: var(--scale-1);
 }
 
-.scale-2 {
+.text-2 {
   font-size: var(--scale-2);
 }
 
-.scale-3 {
+.text-3 {
   font-size: var(--scale-3);
 }
