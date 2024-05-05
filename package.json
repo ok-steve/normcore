@@ -4,13 +4,17 @@
   "version": "0.0.0",
   "description": "An assertively basic web framework.",
   "style": "./dist/css/normcore.css",
+  "browser": "./dist/js/normcore.js",
   "scripts": {
     "clean": "rimraf dist",
-    "lint": "stylelint src/css --fix",
+    "lint:css": "stylelint src/css --fix",
+    "lint:js": "eslint src/js --fix",
+    "lint": "npm run lint:css && npm run lint:js",
     "build:docs": "cp -r docs dist",
     "build:css": "postcss src/css/normcore.css -o dist/css/normcore.css -m",
+    "build:js": "rollup -c",
     "prebuild": "npm run clean",
-    "build": "npm run build:docs && npm run build:css",
+    "build": "npm run build:docs && npm run build:css && npm run build:js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server docs --watch src --mount=/:./src"
   },
@@ -19,7 +23,8 @@
     "url": "git+https://github.com/ok-steve/normcore.git"
   },
   "keywords": [
-    "css"
+    "css",
+    "javascript"
   ],
   "author": {
     "name": "Steve Cherry",
@@ -32,7 +37,12 @@
   },
   "homepage": "https://github.com/ok-steve/normcore#readme",
   "devDependencies": {
-    "eslint-config-prettier": "^8.6.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-compat": "^4.2.0",
+    "eslint-plugin-import": "^2.29.1",
     "live-server": "^1.2.2",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
@@ -40,6 +50,7 @@
     "postcss-minify": "^1.1.0",
     "postcss-preset-env": "^9.5.1",
     "rimraf": "^4.0.4",
+    "rollup": "^4.17.2",
     "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-recess-order": "^3.1.0",
