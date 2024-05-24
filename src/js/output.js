@@ -24,7 +24,7 @@ class NormcoreOutputElement extends HTMLOutputElement {
     this[`on${e.type}`](e);
   }
 
-  oninput(e) {
+  oninput() {
     const values = this.inputTargets.map((el) => el.value);
 
     this.value = values.join(" ");

@@ -25,13 +25,14 @@ class NormcoreFormElement extends HTMLFormElement {
   }
 
   // Persist form data.
-  onchange(e) {
+  onchange() {
     if (!this.name) return;
 
     localStorage.setItem(this.name, JSON.stringify(this.state));
   }
 
   // Disable normal form submission.
+  // eslint-disable-next-line class-methods-use-this
   onsubmit(e) {
     e.preventDefault();
   }
@@ -40,9 +41,9 @@ class NormcoreFormElement extends HTMLFormElement {
     const data = new FormData(this);
     const state = {};
 
-    for (let [key, value] of data.entries()) {
+    Array.from(data.entries()).forEach(([key, value]) => {
       state[key] = value;
-    }
+    });
 
     return state;
   }

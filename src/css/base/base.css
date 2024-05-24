@@ -24,6 +24,7 @@
  * Hide outline on non-keyboard focus.
  */
 
+/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
 :focus:not(:focus-visible) {
   outline: none;
 }
