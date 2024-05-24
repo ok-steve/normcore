@@ -4,14 +4,22 @@
   "version": "0.0.0",
   "description": "An assertively basic web framework.",
   "style": "./dist/css/normcore.css",
-  "browser": "./dist/js/normcore.js",
+  "exports": {
+    ".": {
+      "import": "./src/js/normcore.js",
+      "default": "./dist/js/normcore.js"
+    },
+    "./js": {
+      "import": "./src/js"
+    }
+  },
   "scripts": {
     "clean": "rimraf dist",
     "lint:css": "stylelint src/css --fix",
     "lint:js": "eslint src/js --fix",
     "lint": "npm run lint:css && npm run lint:js",
     "build:docs": "cp -r docs dist",
-    "build:css": "postcss src/css/normcore.css -o dist/css/normcore.css -m",
+    "build:css": "postcss src/css --dir dist/css --ext css --base src/css --map",
     "build:js": "rollup -c",
     "prebuild": "npm run clean",
     "build": "npm run build:docs && npm run build:css && npm run build:js",
