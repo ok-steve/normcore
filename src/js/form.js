@@ -38,14 +38,7 @@ class NormcoreFormElement extends HTMLFormElement {
   }
 
   get state() {
-    const data = new FormData(this);
-    const state = {};
-
-    Array.from(data.entries()).forEach(([key, value]) => {
-      state[key] = value;
-    });
-
-    return state;
+    return Object.fromEntries(new FormData(this));
   }
 
   set state(data = {}) {
