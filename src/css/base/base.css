@@ -3,13 +3,15 @@
 \* ---------------------------------- */
 
 /**
- * Inherit box-sizing to allow easier overrides.
+ * 1. Inherit box-sizing to allow easier overrides.
+ * 2. Backgrounds do not repeat by default.
  */
 
 *,
 ::before,
 ::after {
-  box-sizing: inherit;
+  box-sizing: inherit; /* 1 */
+  background-repeat: no-repeat; /* 2 */
 }
 
 /**
@@ -166,6 +168,7 @@ samp {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 /* ---------------------------------- *\
