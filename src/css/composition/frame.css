@@ -1,5 +1,5 @@
 .frame {
-  aspect-ratio: var(--frame-aspect, 1);
+  aspect-ratio: var(--frame-aspect, auto);
   overflow: hidden;
 }
 
