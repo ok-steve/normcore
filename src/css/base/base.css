@@ -135,7 +135,6 @@ hr {
   block-size: 0; /* 1 */
   color: inherit; /* 2 */
   border: 0; /* 3 */
-  /* stylelint-disable-next-line value-keyword-case */
   border-block-start: 1px solid; /* 3 */
 }
 
