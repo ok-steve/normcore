@@ -2,12 +2,8 @@
    #PADDING
 \* ---------------------------------- */
 
-.p-01 {
-  padding: var(--rhythm-01);
-}
-
-.p-0 {
-  padding: var(--rhythm-0);
+.p-05 {
+  padding: var(--rhythm-05);
 }
 
 .p-1 {
@@ -18,136 +14,164 @@
   padding: var(--rhythm-2);
 }
 
-/**
- * Vertical
- */
-
-.pb-01 {
-  padding-block: var(--rhythm-01);
+.p-3 {
+  padding: var(--rhythm-3);
 }
 
-.pb-0 {
-  padding-block: var(--rhythm-0);
-}
-
-.pb-1 {
-  padding-block: var(--rhythm-1);
-}
-
-.pb-2 {
-  padding-block: var(--rhythm-2);
-}
-
-/**
- * Top
- */
-
-.pbs-01 {
-  padding-block-start: var(--rhythm-01);
-}
-
-.pbs-0 {
-  padding-block-start: var(--rhythm-0);
-}
-
-.pbs-1 {
-  padding-block-start: var(--rhythm-1);
-}
-
-.pbs-2 {
-  padding-block-start: var(--rhythm-2);
-}
-
-/**
- * Bottom
- */
-
-.pbe-01 {
-  padding-block-end: var(--rhythm-01);
-}
-
-.pbe-0 {
-  padding-block-end: var(--rhythm-0);
-}
-
-.pbe-1 {
-  padding-block-end: var(--rhythm-1);
-}
-
-.pbe-2 {
-  padding-block-end: var(--rhythm-2);
+.p-4 {
+  padding: var(--rhythm-4);
 }
 
 /**
  * Horizontal
  */
 
-.pi-01 {
-  padding-inline: var(--rhythm-01);
+.px-05 {
+  padding-inline: var(--rhythm-05);
 }
 
-.pi-0 {
-  padding-inline: var(--rhythm-0);
-}
-
-.pi-1 {
+.px-1 {
   padding-inline: var(--rhythm-1);
 }
 
-.pi-2 {
+.px-2 {
   padding-inline: var(--rhythm-2);
+}
+
+.px-3 {
+  padding-inline: var(--rhythm-3);
+}
+
+.px-4 {
+  padding-inline: var(--rhythm-4);
 }
 
 /**
  * Left
  */
 
-.pis-01 {
-  padding-inline-start: var(--rhythm-01);
+.pl-05 {
+  padding-inline-start: var(--rhythm-05);
 }
 
-.pis-0 {
-  padding-inline-start: var(--rhythm-0);
-}
-
-.pis-1 {
+.pl-1 {
   padding-inline-start: var(--rhythm-1);
 }
 
-.pis-2 {
+.pl-2 {
   padding-inline-start: var(--rhythm-2);
+}
+
+.pl-3 {
+  padding-inline-start: var(--rhythm-3);
+}
+
+.pl-4 {
+  padding-inline-start: var(--rhythm-4);
 }
 
 /**
  * Right
  */
 
-.pie-01 {
-  padding-inline-end: var(--rhythm-01);
+.pr-05 {
+  padding-inline-end: var(--rhythm-05);
 }
 
-.pie-0 {
-  padding-inline-end: var(--rhythm-0);
-}
-
-.pie-1 {
+.pr-1 {
   padding-inline-end: var(--rhythm-1);
 }
 
-.pie-2 {
+.pr-2 {
   padding-inline-end: var(--rhythm-2);
+}
+
+.pr-3 {
+  padding-inline-end: var(--rhythm-3);
+}
+
+.pr-4 {
+  padding-inline-end: var(--rhythm-4);
+}
+
+/**
+ * Vertical
+ */
+
+.py-05 {
+  padding-block: var(--rhythm-05);
+}
+
+.py-1 {
+  padding-block: var(--rhythm-1);
+}
+
+.py-2 {
+  padding-block: var(--rhythm-2);
+}
+
+.py-3 {
+  padding-block: var(--rhythm-3);
+}
+
+.py-4 {
+  padding-block: var(--rhythm-4);
+}
+
+/**
+ * Top
+ */
+
+.pt-05 {
+  padding-block-start: var(--rhythm-05);
+}
+
+.pt-1 {
+  padding-block-start: var(--rhythm-1);
+}
+
+.pt-2 {
+  padding-block-start: var(--rhythm-2);
+}
+
+.pt-3 {
+  padding-block-start: var(--rhythm-3);
+}
+
+.pt-4 {
+  padding-block-start: var(--rhythm-4);
+}
+
+/**
+ * Bottom
+ */
+
+.pb-05 {
+  padding-block-end: var(--rhythm-05);
+}
+
+.pb-1 {
+  padding-block-end: var(--rhythm-1);
+}
+
+.pb-2 {
+  padding-block-end: var(--rhythm-2);
+}
+
+.pb-3 {
+  padding-block-end: var(--rhythm-3);
+}
+
+.pb-4 {
+  padding-block-end: var(--rhythm-4);
 }
 
 /* ---------------------------------- *\
    #MARGIN
 \* ---------------------------------- */
 
-.m-01 {
-  margin: var(--rhythm-01);
-}
-
-.m-0 {
-  margin: var(--rhythm-0);
+.m-05 {
+  margin: var(--rhythm-05);
 }
 
 .m-1 {
@@ -158,122 +182,154 @@
   margin: var(--rhythm-2);
 }
 
-/**
- * Vertical
- */
-
-.mb-01 {
-  margin-block: var(--rhythm-01);
+.m-3 {
+  margin: var(--rhythm-3);
 }
 
-.mb-0 {
-  margin-block: var(--rhythm-0);
-}
-
-.mb-1 {
-  margin-block: var(--rhythm-1);
-}
-
-.mb-2 {
-  margin-block: var(--rhythm-2);
-}
-
-/**
- * Top
- */
-
-.mbs-01 {
-  margin-block-start: var(--rhythm-01);
-}
-
-.mbs-0 {
-  margin-block-start: var(--rhythm-0);
-}
-
-.mbs-1 {
-  margin-block-start: var(--rhythm-1);
-}
-
-.mbs-2 {
-  margin-block-start: var(--rhythm-2);
-}
-
-/**
- * Bottom
- */
-
-.mbe-01 {
-  margin-block-end: var(--rhythm-01);
-}
-
-.mbe-0 {
-  margin-block-end: var(--rhythm-0);
-}
-
-.mbe-1 {
-  margin-block-end: var(--rhythm-1);
-}
-
-.mbe-2 {
-  margin-block-end: var(--rhythm-2);
+.m-4 {
+  margin: var(--rhythm-4);
 }
 
 /**
  * Horizontal
  */
 
-.mi-01 {
-  margin-inline: var(--rhythm-01);
+.mx-05 {
+  margin-inline: var(--rhythm-05);
 }
 
-.mi-0 {
-  margin-inline: var(--rhythm-0);
-}
-
-.mi-1 {
+.mx-1 {
   margin-inline: var(--rhythm-1);
 }
 
-.mi-2 {
+.mx-2 {
   margin-inline: var(--rhythm-2);
+}
+
+.mx-3 {
+  margin-inline: var(--rhythm-3);
+}
+
+.mx-4 {
+  margin-inline: var(--rhythm-4);
 }
 
 /**
  * Left
  */
 
-.mis-01 {
-  margin-inline-start: var(--rhythm-01);
+.ml-05 {
+  margin-inline-start: var(--rhythm-05);
 }
 
-.mis-0 {
-  margin-inline-start: var(--rhythm-0);
-}
-
-.mis-1 {
+.ml-1 {
   margin-inline-start: var(--rhythm-1);
 }
 
-.mis-2 {
+.ml-2 {
   margin-inline-start: var(--rhythm-2);
+}
+
+.ml-3 {
+  margin-inline-start: var(--rhythm-3);
+}
+
+.ml-4 {
+  margin-inline-start: var(--rhythm-4);
 }
 
 /**
  * Right
  */
 
-.mie-01 {
-  margin-inline-end: var(--rhythm-01);
+.mr-05 {
+  margin-inline-end: var(--rhythm-05);
 }
 
-.mie-0 {
-  margin-inline-end: var(--rhythm-0);
-}
-
-.mie-1 {
+.mr-1 {
   margin-inline-end: var(--rhythm-1);
 }
 
-.mie-2 {
+.mr-2 {
   margin-inline-end: var(--rhythm-2);
+}
+
+.mr-3 {
+  margin-inline-end: var(--rhythm-3);
+}
+
+.mr-4 {
+  margin-inline-end: var(--rhythm-4);
+}
+
+/**
+ * Vertical
+ */
+
+.my-05 {
+  margin-block: var(--rhythm-05);
+}
+
+.my-1 {
+  margin-block: var(--rhythm-1);
+}
+
+.my-2 {
+  margin-block: var(--rhythm-2);
+}
+
+.my-3 {
+  margin-block: var(--rhythm-3);
+}
+
+.my-4 {
+  margin-block: var(--rhythm-4);
+}
+
+/**
+ * Top
+ */
+
+.mt-05 {
+  margin-block-start: var(--rhythm-05);
+}
+
+.mt-1 {
+  margin-block-start: var(--rhythm-1);
+}
+
+.mt-2 {
+  margin-block-start: var(--rhythm-2);
+}
+
+.mt-3 {
+  margin-block-start: var(--rhythm-3);
+}
+
+.mt-4 {
+  margin-block-start: var(--rhythm-4);
+}
+
+/**
+ * Bottom
+ */
+
+.mb-05 {
+  margin-block-end: var(--rhythm-05);
+}
+
+.mb-1 {
+  margin-block-end: var(--rhythm-1);
+}
+
+.mb-2 {
+  margin-block-end: var(--rhythm-2);
+}
+
+.mb-3 {
+  margin-block-end: var(--rhythm-3);
+}
+
+.mb-4 {
+  margin-block-end: var(--rhythm-4);
 }
