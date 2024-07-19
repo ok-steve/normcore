@@ -132,7 +132,7 @@ dd {
  */
 
 hr {
-  height: 0; /* 1 */
+  block-size: 0; /* 1 */
   color: inherit; /* 2 */
   border: 0; /* 3 */
   /* stylelint-disable-next-line value-keyword-case */
@@ -166,8 +166,8 @@ samp {
  */
 
 img {
-  max-width: 100%;
-  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
   object-fit: cover;
 }
 
