@@ -1,19 +1,19 @@
-.font-sans {
+.ff-sans {
   font-family: var(--font-sans);
 }
 
-.font-serif {
+.ff-serif {
   font-family: var(--font-serif);
 }
 
-.font-mono {
+.ff-mono {
   font-family: var(--font-mono);
 }
 
-.font-text {
+.ff-text {
   font-family: var(--font-text);
 }
 
-.font-display {
+.ff-display {
   font-family: var(--font-display);
 }
