@@ -238,6 +238,17 @@ label {
   line-height: var(--font-lineheight-0);
 }
 
+/**
+ * Responsive inputs.
+ */
+
+input,
+select,
+textarea {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
 label {
   display: block;
 }
