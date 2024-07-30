@@ -215,3 +215,11 @@ label {
 :where([type="checkbox"], [type="radio"]) ~ label {
   display: inline;
 }
+
+/**
+ * Make sure textareas without a rows attribute are not tiny.
+ */
+
+textarea:not([rows]) {
+  min-block-size: var(--rhythm-4);
+}
