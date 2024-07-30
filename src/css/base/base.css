@@ -161,12 +161,21 @@ samp {
 \* ---------------------------------- */
 
 /**
- * Responsive images.
+ * Responsive media.
  */
 
-img {
+canvas,
+iframe,
+img,
+picture,
+svg,
+video {
+  display: block;
   max-inline-size: 100%;
   block-size: auto;
+}
+
+img {
   object-fit: cover;
 }
 
