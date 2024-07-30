@@ -82,6 +82,16 @@ h6 {
   font-family: var(--font-display);
 }
 
+/**
+ * Reduce line height on large text.
+ */
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
 h1 {
   font-size: var(--scale-3);
 }
@@ -214,6 +224,16 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+/**
+ * Reduce line height on interactive elements.
+ */
+
+button,
+input,
+label {
+  line-height: var(--font-lineheight-0);
 }
 
 label {
