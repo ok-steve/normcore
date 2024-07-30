@@ -197,6 +197,10 @@ table {
    #FORMS
 \* ---------------------------------- */
 
+/**
+ * Add typography inheritance in all browsers.
+ */
+
 input,
 button,
 textarea,
