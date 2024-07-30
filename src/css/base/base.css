@@ -83,13 +83,15 @@ h6 {
 }
 
 /**
- * Reduce line height on large text.
+ * 1. Reduce line height on large text.
+ * 2. Balance text wrapping on headings (opinionated).
  */
 
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1.1; /* 1 */
+  text-wrap: balance; /* 2 */
 }
 
 h1 {
