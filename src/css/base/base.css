@@ -197,6 +197,14 @@ video {
   block-size: auto;
 }
 
+/**
+ * Remove the border on iframes in all browsers (opinionated).
+ */
+
+iframe {
+  border-style: none;
+}
+
 img {
   object-fit: cover;
 }
