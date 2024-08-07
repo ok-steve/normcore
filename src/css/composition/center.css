@@ -1,0 +1,11 @@
+.center {
+  box-sizing: content-box;
+  inline-size: 100%;
+  max-inline-size: var(--center-width, 60ch);
+  padding-inline: var(--center-padding, 0);
+  margin-inline: auto;
+}
+
+.center > * {
+  box-sizing: border-box;
+}
