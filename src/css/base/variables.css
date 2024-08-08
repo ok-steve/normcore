@@ -19,23 +19,12 @@
    * Modular scale
    */
 
-  --scale: 1.2;
-  --scale-0: 1em;
+  --scale: 1.5;
+  --scale-0: 1rem;
   --scale-1-: calc(var(--scale-0) / var(--scale));
   --scale-2-: calc(var(--scale-1-) / var(--scale));
   --scale-1: calc(var(--scale-0) * var(--scale));
   --scale-2: calc(var(--scale-1) * var(--scale));
   --scale-3: calc(var(--scale-2) * var(--scale));
   --scale-4: calc(var(--scale-3) * var(--scale));
-
-  /**
-   * Vertical rhythm
-   */
-
-  --rhythm: 1.5;
-  --rhythm-1: calc(var(--rhythm) * 1em);
-  --rhythm-05: calc(var(--rhythm-1) * 0.5);
-  --rhythm-2: calc(var(--rhythm-0) * 2);
-  --rhythm-3: calc(var(--rhythm-0) * 3);
-  --rhythm-4: calc(var(--rhythm-0) * 4);
 }

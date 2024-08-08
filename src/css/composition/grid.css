@@ -1,5 +1,5 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--grid-min, min-content), 1fr));
-  gap: var(--grid-gap, var(--rhythm-05));
+  gap: var(--grid-gap, var(--scale-0));
 }

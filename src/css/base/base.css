@@ -33,7 +33,7 @@
 
 /**
  * 1. Use a better default box-sizing.
- * 2. Set the vertical rhythm.
+ * 2. Change the line height in all browsers.
  * 3. Breaks words to prevent overflow in all browsers.
  * 4. Prevent adjustments of font size after orientation changes in iOS.
  */
@@ -42,7 +42,7 @@ html {
   box-sizing: border-box; /* 1 */
   font-family: var(--font-text);
   font-size: var(--scale-0);
-  line-height: var(--rhythm); /* 2 */
+  line-height: var(--scale); /* 2 */
   overflow-wrap: break-word; /* 3 */
   /* stylelint-disable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
   -webkit-text-size-adjust: 100%; /* 4 */
@@ -270,5 +270,5 @@ label {
  */
 
 textarea:not([rows]) {
-  min-block-size: var(--rhythm-4);
+  min-block-size: var(--scale-4);
 }
