@@ -2,4 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--cluster-gap, var(--scale-0));
+  justify-content: var(--cluster-justify, flex-start);
+  align-items: var(--cluster-align, flex-start);
 }
