@@ -34,7 +34,8 @@ html {
   /* Use a better default box-sizing. */
   box-sizing: border-box;
   font-family: var(--font-text);
-  font-size: var(--size-0);
+  /* Fluid font sizing */
+  font-size: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
   /* Change the line height in all browsers. */
   line-height: 1.5;
   /* Breaks words to prevent overflow in all browsers. */
