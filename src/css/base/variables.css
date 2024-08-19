@@ -30,4 +30,10 @@
   --size-2: calc(var(--size-0) * pow(var(--ratio), 2));
   --size-3: calc(var(--size-0) * pow(var(--ratio), 3));
   --size-4: calc(var(--size-0) * pow(var(--ratio), 4));
+
+  /**
+   * Colors
+   */
+
+  --color-primary: #228be6;
 }

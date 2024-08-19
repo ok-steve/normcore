@@ -46,6 +46,8 @@ html {
   -moz-text-size-adjust: 100%; /* 4 */
   text-size-adjust: 100%; /* 4 */
   /* stylelint-enable */
+  accent-color: var(--color-primary);
+  caret-color: var(--color-primary);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -160,6 +162,10 @@ pre {
 /* ---------------------------------- *\
    #TEXT
 \* ---------------------------------- */
+
+a {
+  color: var(--color-primary);
+}
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
