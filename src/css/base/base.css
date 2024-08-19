@@ -2,59 +2,44 @@
    #DOCUMENT
 \* ---------------------------------- */
 
-/**
- * 1. Inherit box-sizing to allow easier overrides.
- * 2. Backgrounds do not repeat by default.
- */
-
 *,
 ::before,
 ::after {
-  box-sizing: inherit; /* 1 */
-  background-repeat: no-repeat; /* 2 */
+  /* Inherit box-sizing to allow easier overrides. */
+  box-sizing: inherit;
+  /* Backgrounds do not repeat by default. */
+  background-repeat: no-repeat;
 }
-
-/**
- * 1. Enforce measure.
- * 2. Reset all margins.
- */
 
 * {
+  /* Enforce measure on all elements. */
   max-inline-size: var(--measure);
-  margin: unset; /* 1 */
+  /* Reset all margins. */
+  margin: unset;
 }
-
-/**
- * Hide outline on non-keyboard focus.
- */
 
 /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
 :focus:not(:focus-visible) {
+  /* Hide outline on non-keyboard focus. */
   outline: none;
 }
 
-/**
- * Undo measure on document elements.
- */
-
 html,
 body {
+  /* Undo measure on document elements. */
   max-inline-size: unset;
 }
 
-/**
- * 1. Use a better default box-sizing.
- * 2. Change the line height in all browsers.
- * 3. Breaks words to prevent overflow in all browsers.
- * 4. Prevent adjustments of font size after orientation changes in iOS.
- */
-
 html {
-  box-sizing: border-box; /* 1 */
+  /* Use a better default box-sizing. */
+  box-sizing: border-box;
   font-family: var(--font-text);
   font-size: var(--size-0);
-  line-height: 1.5; /* 2 */
-  overflow-wrap: break-word; /* 3 */
+  /* Change the line height in all browsers. */
+  line-height: 1.5;
+  /* Breaks words to prevent overflow in all browsers. */
+  overflow-wrap: break-word;
+  /* Prevent adjustments of font size after orientation changes in iOS. */
   /* stylelint-disable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
   -webkit-text-size-adjust: 100%; /* 4 */
   -moz-text-size-adjust: 100%; /* 4 */
@@ -62,21 +47,15 @@ html {
   /* stylelint-enable */
 }
 
-/**
- * Smooth scroll, except for find on page.
- */
-
 @media (prefers-reduced-motion: no-preference) {
   html:focus-within {
+    /* Smooth scroll, except for find on page. */
     scroll-behavior: smooth;
   }
 }
 
-/**
- * Anything that has been anchored to should have extra scroll margin.
- */
-
 :target {
+  /* Anything that has been anchored to should have extra scroll margin. */
   scroll-margin-block: 5ex;
 }
 
@@ -84,15 +63,12 @@ html {
    #SECTIONS
 \* ---------------------------------- */
 
-/**
- * Undo measure on container elements.
- */
-
 div,
 header,
 nav,
 main,
 footer {
+  /* Undo measure on container elements. */
   max-inline-size: unset;
 }
 
@@ -105,16 +81,13 @@ h6 {
   font-family: var(--font-display);
 }
 
-/**
- * 1. Reduce line height on large text.
- * 2. Balance text wrapping on headings (opinionated).
- */
-
 h1,
 h2,
 h3 {
-  line-height: 1.1; /* 1 */
-  text-wrap: balance; /* 2 */
+  /* Reduce line height on large text. */
+  line-height: 1.1;
+  /* Balance text wrapping on headings. */
+  text-wrap: balance;
 }
 
 h1 {
@@ -170,17 +143,13 @@ dd {
   grid-column-start: 2;
 }
 
-/**
- * 1. Add the correct box-sizing in Firefox.
- * 2. Correct the inheritance of border color in Firefox.
- * 3. A better looking default horizontal rule.
- */
-
 hr {
-  block-size: 0; /* 1 */
-  color: inherit; /* 2 */
-  border: 0; /* 3 */
-  border-block-start: 1px solid; /* 3 */
+  /* Add the correct box-sizing in Firefox. */
+  block-size: 0;
+  /* Correct the inheritance of border color in Firefox. */
+  color: inherit;
+  border: 0;
+  border-block-start: 1px solid;
 }
 
 pre {
@@ -205,10 +174,6 @@ samp {
    #EMBED
 \* ---------------------------------- */
 
-/**
- * Responsive media.
- */
-
 canvas,
 iframe,
 img,
@@ -220,11 +185,8 @@ video {
   block-size: auto;
 }
 
-/**
- * Remove the border on iframes in all browsers (opinionated).
- */
-
 iframe {
+  /* Remove the border on iframes in all browsers. */
   border-style: none;
 }
 
@@ -236,11 +198,8 @@ img {
    #TABLES
 \* ---------------------------------- */
 
-/**
- * Collapse border spacing in all browsers.
- */
-
 table {
+  /* Collapse border spacing in all browsers. */
   border-collapse: collapse;
 }
 
@@ -248,30 +207,20 @@ table {
    #FORMS
 \* ---------------------------------- */
 
-/**
- * Add typography inheritance in all browsers.
- */
-
 input,
 button,
 textarea,
 select {
+  /* Add typography inheritance in all browsers. */
   font: inherit;
 }
-
-/**
- * Reduce line height on interactive elements.
- */
 
 button,
 input,
 label {
-  line-height: var(--font-lineheight-0);
+  /* Reduce line height on interactive elements. */
+  line-height: 1.1;
 }
-
-/**
- * Responsive inputs.
- */
 
 input,
 select,
@@ -288,10 +237,7 @@ label {
   display: inline;
 }
 
-/**
- * Make sure textareas without a rows attribute are not tiny.
- */
-
 textarea:not([rows]) {
+  /* Make sure textareas without a rows attribute are not tiny. */
   min-block-size: var(--size-4);
 }
