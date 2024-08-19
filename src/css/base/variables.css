@@ -11,9 +11,12 @@
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  /* stylelint-enable */
+
   --font-text: var(--font-sans);
   --font-display: var(--font-text);
-  /* stylelint-enable */
+
+  --measure: 60ch;
 
   /**
    * Modular scale

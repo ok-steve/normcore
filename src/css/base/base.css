@@ -15,11 +15,13 @@
 }
 
 /**
- * Reset all margins.
+ * 1. Enforce measure.
+ * 2. Reset all margins.
  */
 
 * {
-  margin: unset;
+  max-inline-size: var(--measure);
+  margin: unset; /* 1 */
 }
 
 /**
@@ -29,6 +31,15 @@
 /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
 :focus:not(:focus-visible) {
   outline: none;
+}
+
+/**
+ * Undo measure on document elements.
+ */
+
+html,
+body {
+  max-inline-size: unset;
 }
 
 /**
@@ -72,6 +83,18 @@ html {
 /* ---------------------------------- *\
    #SECTIONS
 \* ---------------------------------- */
+
+/**
+ * Undo measure on container elements.
+ */
+
+div,
+header,
+nav,
+main,
+footer {
+  max-inline-size: unset;
+}
 
 h1,
 h2,
