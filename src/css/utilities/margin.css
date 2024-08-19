@@ -1,29 +1,29 @@
 .m-2- {
-  margin: var(--scale-2-);
+  margin: var(--size-2-);
 }
 
 .m-1- {
-  margin: var(--scale-1-);
+  margin: var(--size-1-);
 }
 
 .m-0 {
-  margin: var(--scale-0);
+  margin: var(--size-0);
 }
 
 .m-1 {
-  margin: var(--scale-1);
+  margin: var(--size-1);
 }
 
 .m-2 {
-  margin: var(--scale-2);
+  margin: var(--size-2);
 }
 
 .m-3 {
-  margin: var(--scale-3);
+  margin: var(--size-3);
 }
 
 .m-4 {
-  margin: var(--scale-4);
+  margin: var(--size-4);
 }
 
 /**
@@ -31,31 +31,31 @@
  */
 
 .mx-2- {
-  margin-inline: var(--scale-2-);
+  margin-inline: var(--size-2-);
 }
 
 .mx-1- {
-  margin-inline: var(--scale-1-);
+  margin-inline: var(--size-1-);
 }
 
 .mx-0 {
-  margin-inline: var(--scale-0);
+  margin-inline: var(--size-0);
 }
 
 .mx-1 {
-  margin-inline: var(--scale-1);
+  margin-inline: var(--size-1);
 }
 
 .mx-2 {
-  margin-inline: var(--scale-2);
+  margin-inline: var(--size-2);
 }
 
 .mx-3 {
-  margin-inline: var(--scale-3);
+  margin-inline: var(--size-3);
 }
 
 .mx-4 {
-  margin-inline: var(--scale-4);
+  margin-inline: var(--size-4);
 }
 
 /**
@@ -63,31 +63,31 @@
  */
 
 .ml-2- {
-  margin-inline-start: var(--scale-2-);
+  margin-inline-start: var(--size-2-);
 }
 
 .ml-1- {
-  margin-inline-start: var(--scale-1-);
+  margin-inline-start: var(--size-1-);
 }
 
 .ml-0 {
-  margin-inline-start: var(--scale-0);
+  margin-inline-start: var(--size-0);
 }
 
 .ml-1 {
-  margin-inline-start: var(--scale-1);
+  margin-inline-start: var(--size-1);
 }
 
 .ml-2 {
-  margin-inline-start: var(--scale-2);
+  margin-inline-start: var(--size-2);
 }
 
 .ml-3 {
-  margin-inline-start: var(--scale-3);
+  margin-inline-start: var(--size-3);
 }
 
 .ml-4 {
-  margin-inline-start: var(--scale-4);
+  margin-inline-start: var(--size-4);
 }
 
 /**
@@ -95,31 +95,31 @@
  */
 
 .mr-2- {
-  margin-inline-end: var(--scale-2-);
+  margin-inline-end: var(--size-2-);
 }
 
 .mr-1- {
-  margin-inline-end: var(--scale-1-);
+  margin-inline-end: var(--size-1-);
 }
 
 .mr-0 {
-  margin-inline-end: var(--scale-0);
+  margin-inline-end: var(--size-0);
 }
 
 .mr-1 {
-  margin-inline-end: var(--scale-1);
+  margin-inline-end: var(--size-1);
 }
 
 .mr-2 {
-  margin-inline-end: var(--scale-2);
+  margin-inline-end: var(--size-2);
 }
 
 .mr-3 {
-  margin-inline-end: var(--scale-3);
+  margin-inline-end: var(--size-3);
 }
 
 .mr-4 {
-  margin-inline-end: var(--scale-4);
+  margin-inline-end: var(--size-4);
 }
 
 /**
@@ -127,31 +127,31 @@
  */
 
 .my-2- {
-  margin-block: var(--scale-2-);
+  margin-block: var(--size-2-);
 }
 
 .my-1- {
-  margin-block: var(--scale-1-);
+  margin-block: var(--size-1-);
 }
 
 .my-0 {
-  margin-block: var(--scale-0);
+  margin-block: var(--size-0);
 }
 
 .my-1 {
-  margin-block: var(--scale-1);
+  margin-block: var(--size-1);
 }
 
 .my-2 {
-  margin-block: var(--scale-2);
+  margin-block: var(--size-2);
 }
 
 .my-3 {
-  margin-block: var(--scale-3);
+  margin-block: var(--size-3);
 }
 
 .my-4 {
-  margin-block: var(--scale-4);
+  margin-block: var(--size-4);
 }
 
 /**
@@ -159,31 +159,31 @@
  */
 
 .mt-2- {
-  margin-block-start: var(--scale-2-);
+  margin-block-start: var(--size-2-);
 }
 
 .mt-1- {
-  margin-block-start: var(--scale-1-);
+  margin-block-start: var(--size-1-);
 }
 
 .mt-0 {
-  margin-block-start: var(--scale-0);
+  margin-block-start: var(--size-0);
 }
 
 .mt-1 {
-  margin-block-start: var(--scale-1);
+  margin-block-start: var(--size-1);
 }
 
 .mt-2 {
-  margin-block-start: var(--scale-2);
+  margin-block-start: var(--size-2);
 }
 
 .mt-3 {
-  margin-block-start: var(--scale-3);
+  margin-block-start: var(--size-3);
 }
 
 .mt-4 {
-  margin-block-start: var(--scale-4);
+  margin-block-start: var(--size-4);
 }
 
 /**
@@ -191,29 +191,29 @@
  */
 
 .mb-2- {
-  margin-block-end: var(--scale-2-);
+  margin-block-end: var(--size-2-);
 }
 
 .mb-1- {
-  margin-block-end: var(--scale-1-);
+  margin-block-end: var(--size-1-);
 }
 
 .mb-0 {
-  margin-block-end: var(--scale-0);
+  margin-block-end: var(--size-0);
 }
 
 .mb-1 {
-  margin-block-end: var(--scale-1);
+  margin-block-end: var(--size-1);
 }
 
 .mb-2 {
-  margin-block-end: var(--scale-2);
+  margin-block-end: var(--size-2);
 }
 
 .mb-3 {
-  margin-block-end: var(--scale-3);
+  margin-block-end: var(--size-3);
 }
 
 .mb-4 {
-  margin-block-end: var(--scale-4);
+  margin-block-end: var(--size-4);
 }

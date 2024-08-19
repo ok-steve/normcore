@@ -19,12 +19,12 @@
    * Modular scale
    */
 
-  --scale: 1.5;
-  --scale-0: 1rem;
-  --scale-1-: calc(var(--scale-0) / var(--scale));
-  --scale-2-: calc(var(--scale-1-) / var(--scale));
-  --scale-1: calc(var(--scale-0) * var(--scale));
-  --scale-2: calc(var(--scale-1) * var(--scale));
-  --scale-3: calc(var(--scale-2) * var(--scale));
-  --scale-4: calc(var(--scale-3) * var(--scale));
+  --ratio: 1.5;
+  --size-0: 1rem;
+  --size-1-: calc(var(--size-0) * pow(var(--ratio), -1));
+  --size-2-: calc(var(--size-0) * pow(var(--ratio), -2));
+  --size-1: calc(var(--size-0) * pow(var(--ratio), 1));
+  --size-2: calc(var(--size-0) * pow(var(--ratio), 2));
+  --size-3: calc(var(--size-0) * pow(var(--ratio), 3));
+  --size-4: calc(var(--size-0) * pow(var(--ratio), 4));
 }

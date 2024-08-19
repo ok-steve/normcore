@@ -41,8 +41,8 @@
 html {
   box-sizing: border-box; /* 1 */
   font-family: var(--font-text);
-  font-size: var(--scale-0);
-  line-height: var(--scale); /* 2 */
+  font-size: var(--size-0);
+  line-height: var(--ratio); /* 2 */
   overflow-wrap: break-word; /* 3 */
   /* stylelint-disable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
   -webkit-text-size-adjust: 100%; /* 4 */
@@ -95,27 +95,27 @@ h3 {
 }
 
 h1 {
-  font-size: var(--scale-3);
+  font-size: var(--size-3);
 }
 
 h2 {
-  font-size: var(--scale-2);
+  font-size: var(--size-2);
 }
 
 h3 {
-  font-size: var(--scale-1);
+  font-size: var(--size-1);
 }
 
 h4 {
-  font-size: var(--scale-0);
+  font-size: var(--size-0);
 }
 
 h5 {
-  font-size: var(--scale-1-);
+  font-size: var(--size-1-);
 }
 
 h6 {
-  font-size: var(--scale-2-);
+  font-size: var(--size-2-);
 }
 
 /* ---------------------------------- *\
@@ -270,5 +270,5 @@ label {
  */
 
 textarea:not([rows]) {
-  min-block-size: var(--scale-4);
+  min-block-size: var(--size-4);
 }
