@@ -80,6 +80,8 @@ h4,
 h5,
 h6 {
   font-family: var(--font-display);
+  /* Balance text wrapping on headings. */
+  text-wrap: balance;
 }
 
 h1,
@@ -87,8 +89,6 @@ h2,
 h3 {
   /* Reduce line height on large text. */
   line-height: 1.1;
-  /* Balance text wrapping on headings. */
-  text-wrap: balance;
 }
 
 h1 {
