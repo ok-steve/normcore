@@ -208,6 +208,22 @@ img {
 table {
   /* Collapse border spacing in all browsers. */
   border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+caption {
+  text-align: start;
+}
+
+td,
+th {
+  padding: var(--size-2-);
+  border: 1px solid;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: whitesmoke;
 }
 
 /* ---------------------------------- *\
