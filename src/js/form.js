@@ -54,6 +54,6 @@ class NormcoreFormElement extends HTMLFormElement {
 
 if (!customElements.getName(NormcoreFormElement)) {
   customElements.define("normcore-form", NormcoreFormElement, {
-    extends: "form ",
+    extends: "form",
   });
 }
