@@ -1,4 +1,7 @@
 .frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   aspect-ratio: var(--frame-aspect, auto);
   overflow: hidden;
 }
