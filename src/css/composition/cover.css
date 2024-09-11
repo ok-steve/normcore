@@ -1,5 +1,23 @@
 .cover {
+  --cover-space: var(--size-1);
+
   display: flex;
   flex-direction: column;
   min-block-size: var(--cover-height, 100vh);
+}
+
+.cover > * {
+  margin-block: var(--cover-space);
+}
+
+.cover > :first-child:not(.covered-centered) {
+  margin-block-start: 0;
+}
+
+.cover > :last-child:not(.cover-centered) {
+  margin-block-end: 0;
+}
+
+.cover > .cover-centered {
+  margin-block: auto;
 }
