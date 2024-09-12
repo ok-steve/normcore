@@ -1,8 +1,11 @@
 .grid {
+  --grid-gap: var(--size-1);
+
   display: grid;
   grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--grid-min, min-content), 1fr)
+    auto-fit,
+    minmax(var(--grid-min, calc(var(--measure) / 4 - var(--grid-gap))), 1fr)
   );
-  gap: var(--grid-gap, var(--size-0));
+  gap: var(--grid-gap);
+  align-content: start;
 }
