@@ -1,11 +1,17 @@
 .center {
   box-sizing: content-box;
   inline-size: 100%;
-  max-inline-size: var(--center-width, var(--measure));
-  padding-inline: var(--center-padding, 0);
+  max-inline-size: var(--center-size, var(--measure));
+  padding-inline: var(--center-space, 0);
   margin-inline: auto;
 }
 
 .center > * {
   box-sizing: border-box;
+}
+
+.center-intrinsic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

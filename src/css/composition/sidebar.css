@@ -5,7 +5,7 @@
 }
 
 .sidebar > * {
-  flex-basis: auto;
+  flex-basis: var(--sidebar-side-width, auto);
   flex-grow: 1;
 }
 
@@ -13,5 +13,5 @@
 .sidebar-right > :first-child {
   flex-basis: 0;
   flex-grow: 999;
-  min-inline-size: 50%;
+  min-inline-size: var(--sidebar-content-min, 50%);
 }

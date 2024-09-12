@@ -1,11 +1,28 @@
 .grid {
-  --grid-gap: var(--size-1);
+  --grid-columns: 4;
+  --grid-space: var(--size-1);
+  --grid-min: 15rem;
 
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(var(--grid-min, calc(var(--measure) / 4 - var(--grid-gap))), 1fr)
-  );
-  gap: var(--grid-gap);
+  grid-template-columns: 100%;
+  gap: var(--grid-space);
   align-content: start;
+}
+
+@supports (width: max(var(--grid-min), 100%)) {
+  .grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(
+        max(
+          var(--grid-min),
+          calc(
+            (100% - ((var(--grid-columns) - 1) * var(--grid-space))) /
+              var(--grid-columns)
+          )
+        ),
+        1fr
+      )
+    );
+  }
 }
