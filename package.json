@@ -4,28 +4,14 @@
   "version": "0.0.0",
   "description": "An assertively basic web framework.",
   "style": "./dist/css/normcore.css",
-  "exports": {
-    ".": {
-      "import": "./src/js/normcore.js",
-      "default": "./dist/js/normcore.js"
-    },
-    "./js": {
-      "import": "./src/js"
-    }
-  },
   "scripts": {
     "clean": "rimraf dist",
-    "lint:css": "stylelint src/css",
-    "lint:js": "eslint src/js",
-    "lint": "npm run lint:css && npm run lint:js",
-    "format:css": "npm run lint:css -- --fix",
-    "format:js": "npm run lint:js -- --fix",
-    "format": "npm run format:css && npm run format:js",
+    "lint": "stylelint src",
+    "format": "npm run lint:css -- --fix",
     "build:docs": "cp -r docs dist",
-    "build:css": "postcss src/css --dir dist/css --ext css --base src/css --map",
-    "build:js": "rollup -c",
+    "build:css": "postcss src --dir dist --ext css --base src --map",
     "prebuild": "npm run clean",
-    "build": "npm run build:docs && npm run build:css && npm run build:js",
+    "build": "npm run build:docs && npm run build:css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server docs --watch src --mount=/:./src"
   },
@@ -34,8 +20,7 @@
     "url": "git+https://github.com/ok-steve/normcore.git"
   },
   "keywords": [
-    "css",
-    "javascript"
+    "css"
   ],
   "author": {
     "name": "Steve Cherry",
@@ -48,20 +33,13 @@
   },
   "homepage": "https://github.com/ok-steve/normcore#readme",
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.4",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-compat": "^4.2.0",
-    "eslint-plugin-import": "^2.29.1",
     "live-server": "^1.2.2",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
     "postcss-minify": "^1.1.0",
-    "postcss-preset-env": "^9.5.14",
-    "rimraf": "^5.0.7",
-    "rollup": "^4.18.0",
+    "postcss-preset-env": "^10.0.3",
+    "rimraf": "^6.0.1",
     "stylelint": "^16.6.0",
     "stylelint-config-recess-order": "^5.0.1",
     "stylelint-config-standard": "^36.0.0",
