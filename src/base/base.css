@@ -44,9 +44,9 @@ html {
 
   /* Prevent adjustments of font size after orientation changes in iOS. */
   /* stylelint-disable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
   /* stylelint-enable */
   accent-color: var(--color-primary);
   caret-color: var(--color-primary);
