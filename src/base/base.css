@@ -154,6 +154,16 @@ pre {
   font-family: var(--font-mono);
 }
 
+figure {
+  display: table;
+}
+
+figcaption {
+  /* Prevent captions from overflowwing. */
+  display: table-caption;
+  caption-side: bottom;
+}
+
 /* ---------------------------------- *\
    #TEXT
 \* ---------------------------------- */
