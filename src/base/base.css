@@ -258,6 +258,10 @@ label {
   display: block;
 }
 
+label[for] {
+  cursor: pointer;
+}
+
 :where([type="checkbox"], [type="radio"]) + label {
   display: inline;
 }
