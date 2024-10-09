@@ -15,7 +15,6 @@
 
   --font-text: var(--font-sans);
   --font-display: var(--font-text);
-
   --measure: 60ch;
 
   /**
@@ -35,5 +34,5 @@
    * Colors
    */
 
-  --color-primary: #228be6;
+  --color-primary: LinkText;
 }

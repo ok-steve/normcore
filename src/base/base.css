@@ -5,44 +5,33 @@
 *,
 ::before,
 ::after {
-  /* Inherit box-sizing to allow easier overrides. */
   box-sizing: inherit;
-
-  /* Backgrounds do not repeat by default. */
-  background-repeat: no-repeat;
 }
 
 * {
-  /* Reset all margins. */
   margin: unset;
 }
 
-*:not(html, body, div, header, nav, main, footer) {
-  /* Enforce measure. */
+:where(:not(html, body, div, header, nav, main, footer, [class])) {
   max-inline-size: var(--measure);
 }
 
 /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
 :focus:not(:focus-visible) {
-  /* Hide outline on non-keyboard focus. */
   outline: none;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
 html {
-  /* Use a better default box-sizing. */
   box-sizing: border-box;
   font-family: var(--font-text);
-
-  /* Fluid font sizing */
-  font-size: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
-
-  /* Change the line height in all browsers. */
+  font-size: clamp(1em, var(--size-1-) + 0.5vw, calc(1em * var(--ratio)));
   line-height: 1.5;
-
-  /* Breaks words to prevent overflow in all browsers. */
   overflow-wrap: break-word;
 
-  /* Prevent adjustments of font size after orientation changes in iOS. */
   /* stylelint-disable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -54,13 +43,11 @@ html {
 
 @media (prefers-reduced-motion: no-preference) {
   html:focus-within {
-    /* Smooth scroll, except for find on page. */
     scroll-behavior: smooth;
   }
 }
 
 :target {
-  /* Anything that has been anchored to should have extra scroll margin. */
   scroll-margin-block: 5ex;
 }
 
@@ -75,15 +62,12 @@ h4,
 h5,
 h6 {
   font-family: var(--font-display);
-
-  /* Balance text wrapping on headings. */
   text-wrap: balance;
 }
 
 h1,
 h2,
 h3 {
-  /* Reduce line height on large text. */
   line-height: 1.1;
 }
 
@@ -115,10 +99,6 @@ h6 {
    #GROUPING
 \* ---------------------------------- */
 
-/**
- * Only remove list styles with appropriate accessibility attributes.
- */
-
 ol[role="list"],
 ul[role="list"] {
   padding: 0;
@@ -128,7 +108,7 @@ ul[role="list"] {
 dl {
   display: grid;
   grid-template-columns: max-content auto;
-  column-gap: 1em;
+  column-gap: var(--size-0);
 }
 
 dt {
@@ -141,10 +121,6 @@ dd {
 }
 
 hr {
-  /* Add the correct box-sizing in Firefox. */
-  block-size: 0;
-
-  /* Correct the inheritance of border color in Firefox. */
   color: inherit;
   border: 0;
   border-block-start: 1px solid;
@@ -159,7 +135,6 @@ figure {
 }
 
 figcaption {
-  /* Prevent captions from overflowwing. */
   display: table-caption;
   caption-side: bottom;
 }
@@ -198,34 +173,7 @@ video {
 }
 
 iframe {
-  /* Remove the border on iframes in all browsers. */
   border-style: none;
-}
-
-/* ---------------------------------- *\
-   #TABLES
-\* ---------------------------------- */
-
-table {
-  width: 100%;
-
-  /* Collapse border spacing in all browsers. */
-  border-collapse: collapse;
-}
-
-th,
-caption {
-  text-align: start;
-}
-
-td,
-th {
-  padding: var(--size-2-);
-  border: 1px solid;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: whitesmoke;
 }
 
 /* ---------------------------------- *\
@@ -236,15 +184,7 @@ input,
 button,
 textarea,
 select {
-  /* Add typography inheritance in all browsers. */
   font: inherit;
-}
-
-button,
-input,
-label {
-  /* Reduce line height on interactive elements. */
-  line-height: 1.1;
 }
 
 input,
@@ -264,9 +204,4 @@ label[for] {
 
 :where([type="checkbox"], [type="radio"]) + label {
   display: inline;
-}
-
-textarea:not([rows]) {
-  /* Make sure textareas without a rows attribute are not tiny. */
-  min-block-size: var(--size-4);
 }
