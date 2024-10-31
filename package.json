@@ -8,12 +8,9 @@
     "clean": "rimraf dist",
     "lint": "stylelint src",
     "format": "npm run lint:css -- --fix",
-    "build:docs": "cp -r docs dist",
-    "build:css": "postcss src --dir dist --ext css --base src --map",
     "prebuild": "npm run clean",
-    "build": "npm run build:docs && npm run build:css",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server docs --watch src --mount=/:./src"
+    "build": "postcss src --dir dist --ext css --base src --map",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -33,7 +30,6 @@
   },
   "homepage": "https://github.com/ok-steve/normcore#readme",
   "devDependencies": {
-    "live-server": "^1.2.2",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
