@@ -10,7 +10,7 @@
   margin-block-start: var(--cover-space);
 }
 
-.cover > * + .cover-centered {
+.cover > *:has(~ .cover-centered) {
   margin-block-end: var(--cover-space);
 }
 
