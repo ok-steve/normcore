@@ -1,9 +1,9 @@
-.fz-2- {
-  font-size: var(--size-2-);
+.fz--2 {
+  font-size: var(--size--2);
 }
 
-.fz-1- {
-  font-size: var(--size-1-);
+.fz--1 {
+  font-size: var(--size--1);
 }
 
 .fz-0 {

@@ -1,9 +1,9 @@
-.p-2- {
-  padding: var(--size-2-);
+.p--2 {
+  padding: var(--size--2);
 }
 
-.p-1- {
-  padding: var(--size-1-);
+.p--1 {
+  padding: var(--size--1);
 }
 
 .p-0 {
@@ -30,12 +30,12 @@
  * Horizontal
  */
 
-.px-2- {
-  padding-inline: var(--size-2-);
+.px--2 {
+  padding-inline: var(--size--2);
 }
 
-.px-1- {
-  padding-inline: var(--size-1-);
+.px--1 {
+  padding-inline: var(--size--1);
 }
 
 .px-0 {
@@ -62,12 +62,12 @@
  * Left
  */
 
-.pl-2- {
-  padding-inline-start: var(--size-2-);
+.pl--2 {
+  padding-inline-start: var(--size--2);
 }
 
-.pl-1- {
-  padding-inline-start: var(--size-1-);
+.pl--1 {
+  padding-inline-start: var(--size--1);
 }
 
 .pl-0 {
@@ -94,12 +94,12 @@
  * Right
  */
 
-.pr-2- {
-  padding-inline-end: var(--size-2-);
+.pr--2 {
+  padding-inline-end: var(--size--2);
 }
 
-.pr-1- {
-  padding-inline-end: var(--size-1-);
+.pr--1 {
+  padding-inline-end: var(--size--1);
 }
 
 .pr-0 {
@@ -126,12 +126,12 @@
  * Vertical
  */
 
-.py-2- {
-  padding-block: var(--size-2-);
+.py--2 {
+  padding-block: var(--size--2);
 }
 
-.py-1- {
-  padding-block: var(--size-1-);
+.py--1 {
+  padding-block: var(--size--1);
 }
 
 .py-0 {
@@ -158,12 +158,12 @@
  * Top
  */
 
-.pt-2- {
-  padding-block-start: var(--size-2-);
+.pt--2 {
+  padding-block-start: var(--size--2);
 }
 
-.pt-1- {
-  padding-block-start: var(--size-1-);
+.pt--1 {
+  padding-block-start: var(--size--1);
 }
 
 .pt-0 {
@@ -190,12 +190,12 @@
  * Bottom
  */
 
-.pb-2- {
-  padding-block-end: var(--size-2-);
+.pb--2 {
+  padding-block-end: var(--size--2);
 }
 
-.pb-1- {
-  padding-block-end: var(--size-1-);
+.pb--1 {
+  padding-block-end: var(--size--1);
 }
 
 .pb-0 {

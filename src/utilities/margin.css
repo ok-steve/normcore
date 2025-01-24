@@ -1,9 +1,9 @@
-.m-2- {
-  margin: var(--size-2-);
+.m--2 {
+  margin: var(--size--2);
 }
 
-.m-1- {
-  margin: var(--size-1-);
+.m--1 {
+  margin: var(--size--1);
 }
 
 .m-0 {
@@ -30,12 +30,12 @@
  * Horizontal
  */
 
-.mx-2- {
-  margin-inline: var(--size-2-);
+.mx--2 {
+  margin-inline: var(--size--2);
 }
 
-.mx-1- {
-  margin-inline: var(--size-1-);
+.mx--1 {
+  margin-inline: var(--size--1);
 }
 
 .mx-0 {
@@ -62,12 +62,12 @@
  * Left
  */
 
-.ml-2- {
-  margin-inline-start: var(--size-2-);
+.ml--2 {
+  margin-inline-start: var(--size--2);
 }
 
-.ml-1- {
-  margin-inline-start: var(--size-1-);
+.ml--1 {
+  margin-inline-start: var(--size--1);
 }
 
 .ml-0 {
@@ -94,12 +94,12 @@
  * Right
  */
 
-.mr-2- {
-  margin-inline-end: var(--size-2-);
+.mr--2 {
+  margin-inline-end: var(--size--2);
 }
 
-.mr-1- {
-  margin-inline-end: var(--size-1-);
+.mr--1 {
+  margin-inline-end: var(--size--1);
 }
 
 .mr-0 {
@@ -126,12 +126,12 @@
  * Vertical
  */
 
-.my-2- {
-  margin-block: var(--size-2-);
+.my--2 {
+  margin-block: var(--size--2);
 }
 
-.my-1- {
-  margin-block: var(--size-1-);
+.my--1 {
+  margin-block: var(--size--1);
 }
 
 .my-0 {
@@ -158,12 +158,12 @@
  * Top
  */
 
-.mt-2- {
-  margin-block-start: var(--size-2-);
+.mt--2 {
+  margin-block-start: var(--size--2);
 }
 
-.mt-1- {
-  margin-block-start: var(--size-1-);
+.mt--1 {
+  margin-block-start: var(--size--1);
 }
 
 .mt-0 {
@@ -190,12 +190,12 @@
  * Bottom
  */
 
-.mb-2- {
-  margin-block-end: var(--size-2-);
+.mb--2 {
+  margin-block-end: var(--size--2);
 }
 
-.mb-1- {
-  margin-block-end: var(--size-1-);
+.mb--1 {
+  margin-block-end: var(--size--1);
 }
 
 .mb-0 {
