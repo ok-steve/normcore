@@ -8,8 +8,10 @@
     "clean": "rimraf dist",
     "lint": "stylelint src",
     "format": "npm run lint -- --fix",
+    "build:docs": "eleventy",
+    "build:css": "postcss src --dir dist --ext css --base src --map",
     "prebuild": "npm run clean",
-    "build": "postcss src --dir dist --ext css --base src --map",
+    "build": "npm run build:docs && npm run build:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +32,7 @@
   },
   "homepage": "https://github.com/ok-steve/normcore#readme",
   "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",

@@ -1,3 +1,3 @@
 # normcore
 
-An assertively basic web framework
+An assertively basic web framework.
