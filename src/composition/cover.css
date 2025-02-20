@@ -10,6 +10,7 @@
   margin-block-start: var(--cover-space);
 }
 
+/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
 .cover > *:has(~ .cover-centered) {
   margin-block-end: var(--cover-space);
 }
