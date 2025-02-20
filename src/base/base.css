@@ -12,7 +12,7 @@
   margin: unset;
 }
 
-:where(:not(html, body, div, header, nav, main, footer, [class])) {
+:where(:not(html, body, div, header, nav, main, footer, form, [class])) {
   max-inline-size: var(--measure);
 }
 
