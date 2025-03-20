@@ -93,6 +93,10 @@ h6 {
    #GROUPING
 \* ---------------------------------- */
 
+p {
+  text-wrap: pretty;
+}
+
 ol[role="list"],
 ul[role="list"] {
   padding: 0;
