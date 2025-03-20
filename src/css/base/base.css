@@ -29,7 +29,7 @@
 html {
   box-sizing: border-box;
   font-family: var(--font-text);
-  font-size: clamp(1em, var(--size--1) + 0.5vw, calc(1em * var(--ratio)));
+  font-size: clamp(var(--size-0), var(--size--1) + 0.5vw, var(--size-1));
   overflow-wrap: break-word;
 
   /* stylelint-disable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
