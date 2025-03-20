@@ -10,6 +10,7 @@
 
 * {
   margin: unset;
+  line-height: max(1.5rem, 1.1em);
 }
 
 :where(:not(html, body, div, header, nav, main, footer, form, [class])) {
@@ -29,7 +30,6 @@ html {
   box-sizing: border-box;
   font-family: var(--font-text);
   font-size: clamp(1em, var(--size--1) + 0.5vw, calc(1em * var(--ratio)));
-  line-height: 1.5;
   overflow-wrap: break-word;
 
   /* stylelint-disable plugin/no-unsupported-browser-features, property-no-vendor-prefix */
@@ -63,12 +63,6 @@ h5,
 h6 {
   font-family: var(--font-display);
   text-wrap: balance;
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1.1;
 }
 
 h1 {
