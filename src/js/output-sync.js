@@ -1,5 +1,8 @@
 class OutputSyncElement extends HTMLOutputElement {
   connectedCallback() {
+    // Set value when component is loaded.
+    this.oninput();
+
     ["input"].forEach((eventType) =>
       this.inputTargets.forEach((target) =>
         target.addEventListener(eventType, this)
@@ -22,7 +25,7 @@ class OutputSyncElement extends HTMLOutputElement {
   oninput() {
     const values = this.inputTargets.map((el) => el.value);
 
-    this.value = values.join(" ");
+    this.textContent = values.join(" ");
   }
 
   get inputTargets() {
