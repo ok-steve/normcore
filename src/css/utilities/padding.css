@@ -26,6 +26,26 @@
   padding: var(--size-4);
 }
 
+.p-5 {
+  padding: var(--size-5);
+}
+
+.p-6 {
+  padding: var(--size-6);
+}
+
+.p-7 {
+  padding: var(--size-7);
+}
+
+.p-8 {
+  padding: var(--size-8);
+}
+
+.p-9 {
+  padding: var(--size-9);
+}
+
 /**
  * Horizontal
  */
@@ -56,6 +76,26 @@
 
 .px-4 {
   padding-inline: var(--size-4);
+}
+
+.px-5 {
+  padding-inline: var(--size-5);
+}
+
+.px-6 {
+  padding-inline: var(--size-6);
+}
+
+.px-7 {
+  padding-inline: var(--size-7);
+}
+
+.px-8 {
+  padding-inline: var(--size-8);
+}
+
+.px-9 {
+  padding-inline: var(--size-9);
 }
 
 /**
@@ -90,6 +130,26 @@
   padding-inline-start: var(--size-4);
 }
 
+.pl-5 {
+  padding-inline-start: var(--size-5);
+}
+
+.pl-6 {
+  padding-inline-start: var(--size-6);
+}
+
+.pl-7 {
+  padding-inline-start: var(--size-7);
+}
+
+.pl-8 {
+  padding-inline-start: var(--size-8);
+}
+
+.pl-9 {
+  padding-inline-start: var(--size-9);
+}
+
 /**
  * Right
  */
@@ -120,6 +180,26 @@
 
 .pr-4 {
   padding-inline-end: var(--size-4);
+}
+
+.pr-5 {
+  padding-inline-end: var(--size-5);
+}
+
+.pr-6 {
+  padding-inline-end: var(--size-6);
+}
+
+.pr-7 {
+  padding-inline-end: var(--size-7);
+}
+
+.pr-8 {
+  padding-inline-end: var(--size-8);
+}
+
+.pr-9 {
+  padding-inline-end: var(--size-9);
 }
 
 /**
@@ -154,6 +234,26 @@
   padding-block: var(--size-4);
 }
 
+.py-5 {
+  padding-block: var(--size-5);
+}
+
+.py-6 {
+  padding-block: var(--size-6);
+}
+
+.py-7 {
+  padding-block: var(--size-7);
+}
+
+.py-8 {
+  padding-block: var(--size-8);
+}
+
+.py-9 {
+  padding-block: var(--size-9);
+}
+
 /**
  * Top
  */
@@ -186,6 +286,26 @@
   padding-block-start: var(--size-4);
 }
 
+.pt-5 {
+  padding-block-start: var(--size-5);
+}
+
+.pt-6 {
+  padding-block-start: var(--size-6);
+}
+
+.pt-7 {
+  padding-block-start: var(--size-7);
+}
+
+.pt-8 {
+  padding-block-start: var(--size-8);
+}
+
+.pt-9 {
+  padding-block-start: var(--size-9);
+}
+
 /**
  * Bottom
  */
@@ -216,4 +336,24 @@
 
 .pb-4 {
   padding-block-end: var(--size-4);
+}
+
+.pb-5 {
+  padding-block-end: var(--size-5);
+}
+
+.pb-6 {
+  padding-block-end: var(--size-6);
+}
+
+.pb-7 {
+  padding-block-end: var(--size-7);
+}
+
+.pb-8 {
+  padding-block-end: var(--size-8);
+}
+
+.pb-9 {
+  padding-block-end: var(--size-9);
 }
