@@ -4,6 +4,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("permalink", "index.html");
   eleventyConfig.addGlobalData("layout", "layout.njk");
 
+  // Add assets in development.
+  if (process.env.ELEVENTY_RUN_MODE === "serve") {
+    eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+    eleventyConfig.addPassthroughCopy({ "src/css": "css" });
+    eleventyConfig.addPassthroughCopy({ "src/js": "js" });
+  }
+
   return {
     dir: {
       output: "dist",
