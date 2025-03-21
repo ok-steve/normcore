@@ -30,7 +30,7 @@ class OutputSyncElement extends HTMLOutputElement {
 
   get inputTargets() {
     return Array.from(this.htmlFor)
-      .map((id) => this.form.getElementById(id))
+      .map((id) => document.getElementById(id))
       .filter((el) => el !== null);
   }
 }
