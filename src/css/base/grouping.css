@@ -1,0 +1,43 @@
+p {
+  text-wrap: pretty;
+}
+
+ol[role="list"],
+ul[role="list"] {
+  padding: 0;
+  list-style: none;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: var(--size-0);
+}
+
+dt {
+  font-weight: 700;
+  text-align: end;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
+hr {
+  color: inherit;
+  border: 0;
+  border-block-start: 1px solid;
+}
+
+pre {
+  font-family: var(--font-mono);
+}
+
+figure {
+  display: table;
+}
+
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}

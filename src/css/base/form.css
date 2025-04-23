@@ -1,0 +1,25 @@
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+label {
+  display: block;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+:where([type="checkbox"], [type="radio"]) + label {
+  display: inline;
+}

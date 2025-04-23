@@ -1,0 +1,14 @@
+canvas,
+iframe,
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+iframe {
+  border-style: none;
+}

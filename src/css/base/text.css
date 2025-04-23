@@ -1,0 +1,13 @@
+a {
+  color: var(--color-primary);
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+code,
+kbd,
+samp {
+  font-family: var(--font-mono);
+}
