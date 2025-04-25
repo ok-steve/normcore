@@ -39,5 +39,10 @@
    * Colors
    */
 
-  --color-primary: LinkText;
+  /* stylelint-disable value-keyword-case */
+  --color-paper: CanvasColor;
+  --color-ink: CanvasText;
+  --color-muted: ButtonFace;
+  --color-primary: AccentColor;
+  /* stylelint-enable */
 }
