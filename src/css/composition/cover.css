@@ -1,20 +1,18 @@
 .cover {
-  --cover-space: var(--size-1);
-
   display: flex;
   flex-direction: column;
+  gap: var(--cover-space, 0);
   min-block-size: var(--cover-size, 100vh);
 }
 
-.cover > * + * {
-  margin-block-start: var(--cover-space);
+.cover-start {
+  margin-block-end: auto;
 }
 
-/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
-.cover > *:has(~ .cover-centered) {
-  margin-block-end: var(--cover-space);
-}
-
-.cover > .cover-centered {
+.cover-center {
   margin-block: auto;
+}
+
+.cover-end {
+  margin-block-start: auto;
 }
