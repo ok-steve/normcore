@@ -1,6 +1,6 @@
 .grid {
   --grid-columns: 4;
-  --grid-space: var(--size-1);
+  --grid-space: 1lh;
   --grid-min: 15rem;
 
   display: grid;

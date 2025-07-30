@@ -1,7 +1,7 @@
 :has(> .sidebar) {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--sidebar-space, var(--size-0));
+  gap: var(--sidebar-space, 1lh);
   align-items: var(--sidebar-align, normal);
 }
 
