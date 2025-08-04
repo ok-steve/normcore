@@ -1,0 +1,11 @@
+.ff-text {
+  font-family: var(--font-text);
+}
+
+.ff-display {
+  font-family: var(--font-display);
+}
+
+.ff-mono {
+  font-family: var(--font-mono);
+}
