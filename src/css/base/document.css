@@ -9,8 +9,11 @@
 }
 
 :where(:not(html, body, div, header, nav, main, footer, form, [class])) {
-  line-height: max(1rlh, 1.1em);
   max-inline-size: var(--measure);
+}
+
+:where(:not(html, body, div, header, nav, main, footer, form)) {
+  line-height: max(1rlh, 1.1em);
 }
 
 /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
