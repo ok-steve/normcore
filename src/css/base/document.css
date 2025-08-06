@@ -6,7 +6,7 @@
 
 * {
   margin: unset;
-  line-height: max(1.5rem, 1.1em);
+  line-height: max(1rlh, 1.1em);
 }
 
 :where(:not(html, body, div, header, nav, main, footer, form, [class])) {
@@ -25,7 +25,7 @@
 html {
   box-sizing: border-box;
   font-family: var(--font-text);
-  font-size: clamp(var(--size-0), var(--size--1) + 0.5vw, var(--size-1));
+  font-size: var(--size-0);
   color: var(--color-ink);
   overflow-wrap: break-word;
   accent-color: var(--color-primary);
