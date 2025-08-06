@@ -1,7 +1,7 @@
 .grid {
   --grid-columns: 4;
   --grid-space: 1lh;
-  --grid-min: 15rem;
+  --grid-min: 15em;
 
   display: grid;
   grid-template-columns: 100%;
