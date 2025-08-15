@@ -1,7 +1,7 @@
 .cover {
   display: flex;
   flex-direction: column;
-  gap: var(--cover-space, 0);
+  gap: var(--cover-space, var(--space-0));
   min-block-size: var(--cover-size, 100vh);
 }
 

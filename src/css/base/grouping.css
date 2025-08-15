@@ -11,7 +11,7 @@ ul[role="list"] {
 dl {
   display: grid;
   grid-template-columns: max-content auto;
-  column-gap: 1lh;
+  column-gap: var(--space-0);
 }
 
 dt {

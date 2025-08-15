@@ -1,7 +1,7 @@
 .center {
   inline-size: 100%;
   max-inline-size: var(--center-size, var(--measure));
-  padding-inline: var(--center-space, 0);
+  padding-inline: var(--center-space, var(--space-0));
   margin-inline: auto;
 }
 
