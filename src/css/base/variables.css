@@ -21,7 +21,7 @@
    * Modular scale
    */
 
-  --size-ratio: 1.2;
+  --size-ratio: 1.1487;
   --size-0: 1rem;
   --size--1: calc(var(--size-0) * pow(var(--size-ratio), -1));
   --size--2: calc(var(--size-0) * pow(var(--size-ratio), -2));
