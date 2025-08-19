@@ -38,6 +38,8 @@ html {
   -moz-text-size-adjust: none;
   text-size-adjust: none;
   /* stylelint-enable */
+
+  interpolate-size: allow-keywords;
 }
 
 @media (prefers-reduced-motion: no-preference) {
