@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: var(--frame-aspect, auto);
+  aspect-ratio: var(--frame-size, auto);
   overflow: hidden;
 }
 
@@ -10,16 +10,4 @@
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
-}
-
-.frame-4x3 {
-  --frame-aspect: 4 / 3;
-}
-
-.frame-16x9 {
-  --frame-aspect: 16 / 9;
-}
-
-.frame-1x1 {
-  --frame-aspect: 1;
 }
