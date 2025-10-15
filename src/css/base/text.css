@@ -11,3 +11,7 @@ kbd,
 samp {
   font-family: var(--font-mono);
 }
+
+blockquote {
+  font-size: var(--size-1);
+}
