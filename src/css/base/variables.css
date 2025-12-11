@@ -50,7 +50,7 @@
    */
 
   /* stylelint-disable value-keyword-case */
-  --color-paper: CanvasColor;
+  --color-paper: Canvas;
   --color-ink: CanvasText;
   --color-muted: ButtonFace;
   --color-primary: AccentColor;

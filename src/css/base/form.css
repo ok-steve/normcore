@@ -12,6 +12,17 @@ textarea {
   block-size: auto;
 }
 
+:where(button, [type="button"], [type="reset"], [type="submit"]) {
+  background-color: transparent;
+  border: 1px solid var(--color-ink);
+  cursor: pointer;
+}
+
+:where(button, [type="button"], [type="reset"], [type="submit"]):where(:hover, :focus) {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+}
+
 label {
   display: block;
 }
