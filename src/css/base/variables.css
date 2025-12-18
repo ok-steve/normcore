@@ -53,6 +53,7 @@
   --color-paper: Canvas;
   --color-ink: CanvasText;
   --color-muted: ButtonFace;
+  --color-highlight: Highlight;
   --color-primary: AccentColor;
   /* stylelint-enable */
 }
