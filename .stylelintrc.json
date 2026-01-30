@@ -3,12 +3,6 @@
   "plugins": ["stylelint-no-unsupported-browser-features"],
   "rules": {
     "custom-property-pattern": "^([a-z][a-z0-9]*)(-+[a-z0-9]+)*$",
-    "selector-class-pattern": "^([a-z][a-z0-9]*)(-+[a-z0-9]+)*$",
-    "plugin/no-unsupported-browser-features": [
-      true,
-      {
-        "ignorePartialSupport": true
-      }
-    ]
+    "selector-class-pattern": "^([a-z][a-z0-9]*)(-+[a-z0-9]+)*$"
   }
 }

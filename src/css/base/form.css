@@ -13,14 +13,14 @@ textarea {
 }
 
 :where(button, [type="button"], [type="reset"], [type="submit"]) {
+  cursor: pointer;
   background-color: transparent;
   border: 1px solid var(--color-ink);
-  cursor: pointer;
 }
 
 :where(button, [type="button"], [type="reset"], [type="submit"]):where(:hover, :focus) {
-  background-color: var(--color-ink);
   color: var(--color-paper);
+  background-color: var(--color-ink);
 }
 
 label {
