@@ -44,11 +44,13 @@ html {
   -moz-text-size-adjust: none;
   text-size-adjust: none;
   /* stylelint-enable */
-
-  interpolate-size: allow-keywords;
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+
   html:focus-within {
     scroll-behavior: smooth;
   }
