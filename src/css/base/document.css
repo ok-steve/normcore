@@ -6,7 +6,7 @@
 
 * {
   margin: unset;
-  line-height: max(var(--space-0), 1.1em);
+  line-height: max(1rlh, 1rlh - 1rem + 1em);
 }
 
 :where(:not(html, body, div, header, nav, main, footer, form, [class])) {
