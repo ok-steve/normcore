@@ -5,14 +5,14 @@
   min-block-size: var(--cover-size, 100dvb);
 }
 
-.cover-start {
+.cover--start {
   margin-block-end: auto;
 }
 
-.cover-center {
+.cover--center {
   margin-block: auto;
 }
 
-.cover-end {
+.cover--end {
   margin-block-start: auto;
 }
