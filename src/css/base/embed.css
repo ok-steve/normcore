@@ -17,3 +17,7 @@ iframe {
 svg {
   max-inline-size: 100%;
 }
+
+svg:not([fill]) {
+  fill: currentcolor;
+}
