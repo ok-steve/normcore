@@ -6,9 +6,14 @@ blockquote {
   font-size: var(--size-1);
 }
 
+ol,
+ul {
+  padding-inline-start: var(--space-0);
+}
+
 ol[role="list"],
 ul[role="list"] {
-  padding: 0;
+  padding-inline-start: unset;
   list-style: none;
 }
 
