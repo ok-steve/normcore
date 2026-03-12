@@ -36,6 +36,7 @@
 html {
   box-sizing: border-box;
   block-size: 100%;
+  scrollbar-gutter: stable;
   font-family: var(--font-text);
   font-size: var(--size-0);
   line-height: 1.5;
