@@ -6,8 +6,132 @@
     <title>Normcore</title>
     <link rel="stylesheet" href="./css/normcore.css" />
   </head>
-  <body>
-    <h1>Normcore</h1>
-    <p>An assertively basic web framework.</p>
+  <body class="center cover">
+    <header role="banner">
+      <h1>Normcore</h1>
+    </header>
+    <main class="stack cover--start" role="main">
+      <p>An assertively basic web framework.</p>
+      <h2>Element demos</h2>
+      <h1>Heading level 1</h1>
+      <h2>Heading level 2</h2>
+      <h3>Heading level 3</h3>
+      <h4>Heading level 4</h4>
+      <h5>Heading level 5</h5>
+      <h6>Heading level 6</h6>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolorum
+        inventore. Laudantium reprehenderit recusandae consequatur illum
+        repellat at, amet ad officia dolorum corrupti id, consectetur magni
+        maxime pariatur ullam eaque.
+      </p>
+      <blockquote>
+        <p>Hello world</p>
+        <cite>Anonymous</cite>
+      </blockquote>
+      <ul>
+        <li>List item</li>
+        <li>
+          List item
+          <ul>
+            <li>List item</li>
+            <li>List item</li>
+          </ul>
+        </li>
+        <li>List item</li>
+      </ul>
+      <ol>
+        <li>List item</li>
+        <li>
+          List item
+          <ol>
+            <li>List item</li>
+            <li>List item</li>
+          </ol>
+        </li>
+        <li>List item</li>
+      </ol>
+      <dl>
+        <dt>Definition</dt>
+        <dd>Term</dd>
+        <dt>Definition</dt>
+        <dd>Term</dd>
+      </dl>
+      <hr />
+      <pre><code>console.log('Hello world');</code></pre>
+      <figure>
+        <img src="https://placehold.co/600x400" alt="Placeholder image" />
+        <figcaption>This is a caption.</figcaption>
+      </figure>
+      <p>
+        This is some text with <a href="#top">anchor</a>, <kbd>kbd</kbd>,
+        <code>code</code>, <samp>samp</samp>, and <mark>mark</mark> elements in
+        it.
+      </p>
+      <iframe
+        class="frame"
+        style="--frame-size: 16 / 9"
+        src="/index.html"
+      ></iframe>
+      <table>
+        <thead>
+          <tr>
+            <th>First</th>
+            <th>Second</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+          </tr>
+          <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+          </tr>
+        </tbody>
+      </table>
+      <form>
+        <label for="text">Text input</label>
+        <input type="text" id="text" />
+        <label for="search">Search input</label>
+        <input type="search" id="search" />
+        <label for="disabled">Disabled input</label>
+        <input type="text" id="disabled" disabled />
+        <label for="select">Select</label>
+        <select name="select" id="select">
+          <option value="one">One</option>
+          <option value="two">Two</option>
+          <option value="three">Three</option>
+        </select>
+        <fieldset>
+          <legend>Radio legend</legend>
+          <input type="radio" name="radio" id="radio-1" />
+          <label for="radio-1">One</label>
+          <input type="radio" name="radio" id="radio-2" />
+          <label for="radio-2">Two</label>
+          <input type="radio" name="radio" id="radio-3" />
+          <label for="radio-3">Three</label>
+        </fieldset>
+        <fieldset>
+          <legend>Checkbox legend</legend>
+          <input type="checkbox" name="checkbox-1" id="checkbox-1" />
+          <label for="checkbox-1">One</label>
+          <input type="checkbox" name="checkbox-2" id="checkbox-2" />
+          <label for="checkbox-2">Two</label>
+          <input type="checkbox" name="checkbox-3" id="checkbox-3" />
+          <label for="checkbox-3">Three</label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+        <button>Button</button>
+      </form>
+    </main>
+    <footer role="contentinfo">
+      <p>
+        Yet another
+        <a href="https://github.com/ok-steve/normcore">project</a> by
+        <a href="https://stevecherry.net">Steve Cherry</a>.
+      </p>
+    </footer>
   </body>
 </html>
