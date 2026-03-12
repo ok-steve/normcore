@@ -2,6 +2,10 @@ p {
   text-wrap: pretty;
 }
 
+blockquote {
+  font-size: var(--size-1);
+}
+
 ol[role="list"],
 ul[role="list"] {
   padding: 0;
