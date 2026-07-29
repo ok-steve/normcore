@@ -20,7 +20,7 @@ ul[role="list"] {
 dl {
   display: grid;
   grid-template-columns: max-content auto;
-  column-gap: var(--space-0);
+  gap: normal var(--space-0);
 }
 
 dt {

@@ -3,6 +3,7 @@ a {
 }
 
 a:not([class]) {
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   text-decoration-skip-ink: auto;
 }
 
