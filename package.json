@@ -18,7 +18,8 @@
     "lint": "stylelint src/css",
     "format": "npm run lint -- --fix",
     "build:docs": "cp -r docs dist",
-    "build:css": "postcss src/css/normcore.css --dir dist/css --ext css --base src/css --map",
+    "prebuild:css": "mkdir -p dist/css",
+    "build:css": "lightningcss --minify --bundle --browserslist --sourcemap src/css/*.css --output-dir dist/css",
     "prebuild": "npm run clean",
     "build": "npm run build:docs && npm run build:css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -42,11 +43,7 @@
   },
   "homepage": "https://github.com/ok-steve/normcore#readme",
   "devDependencies": {
-    "postcss": "^8.4.38",
-    "postcss-cli": "^11.0.0",
-    "postcss-import": "^16.1.0",
-    "postcss-minify": "^1.1.0",
-    "postcss-preset-env": "^10.0.3",
+    "lightningcss-cli": "^1.33.0",
     "rimraf": "^6.0.1",
     "stylelint": "^16.6.0",
     "stylelint-config-recess-order": "^7.1.0",
