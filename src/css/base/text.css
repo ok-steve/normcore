@@ -12,3 +12,9 @@ kbd,
 samp {
   font-family: var(--font-mono);
 }
+
+small,
+sub,
+sup {
+  font-size: var(--size-smaller);
+}
