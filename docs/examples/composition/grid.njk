@@ -1,0 +1,12 @@
+---
+title: Grid
+---
+
+{% for columns in range(2, 5) %}
+  <h4>Grid columns: {{ columns }}</h4>
+  <div style="--grid-columns: {{ columns }}; --grid-min: 2rlh;" class="grid">
+    {% for i in range(0, 12) %}
+      <div style="background-color: oklch(0.9 0 0);">&nbsp;</div>
+    {% endfor %}
+  </div>
+{% endfor %}

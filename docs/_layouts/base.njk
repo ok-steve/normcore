@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include "head.njk" %}
+  </head>
+  <body class="center cover">
+    {% include "header.njk" %}
+    {% include "navigation.njk" %}
+    <main class="stack cover--start" role="main">
+      <h1>{{ title | default(pkg.name) | capitalize }}</h1>
+      {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
+  </body>
+</html>

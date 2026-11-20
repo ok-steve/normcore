@@ -1,0 +1,16 @@
+{
+  "navigation": [
+    {
+      "title": "Base",
+      "url": "/base/"
+    },
+    {
+      "title": "Composition",
+      "url": "/composition/"
+    },
+    {
+      "title": "Utilities",
+      "url": "/utilities/"
+    }
+  ]
+}

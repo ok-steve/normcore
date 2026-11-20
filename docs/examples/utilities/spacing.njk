@@ -1,0 +1,19 @@
+---
+title: Spacing
+---
+
+{% for property in ['margin', 'padding'] %}
+  {% for direction in ['', 'x', 'y', 'top', 'bottom', 'left', 'right'] %}
+    {% for i in range(-2, 3) %}
+      <div class="p--2" style="background-color: oklch(0.9 0 0);">
+        <div style="display: flow-root; background-color: oklch(0.8 0 0);">
+          <div
+            style="background-color: white;"
+            class="{{ property|first }}{{ direction|first }}-{{ i }}">
+            {{ property }} {{ direction }} {{ i }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
+{% endfor %}

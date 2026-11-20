@@ -1,0 +1,11 @@
+<nav role="navigation">
+  <ul class="cluster" role="list">
+    {% for item in site.navigation %}
+      <li>
+        <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>
+          {{ item.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,7 +1,0 @@
-{
-  "liveServer.settings.root": "/docs",
-  "liveServer.settings.mount": [
-    ["/css", "./src/css"],
-    ["/js", "./src/js"]
-  ]
-}

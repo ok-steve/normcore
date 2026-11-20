@@ -3,17 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "description": "An assertively basic web framework.",
+  "type": "module",
   "style": "./dist/css/normcore.css",
   "scripts": {
     "clean": "rimraf dist",
     "lint": "stylelint src/css",
     "format": "npm run lint -- --fix",
-    "build:docs": "cp -r docs dist",
+    "build:docs": "eleventy --pathprefix=normcore",
     "prebuild:css": "mkdir -p dist/css",
     "build:css": "lightningcss --minify --bundle --browserslist --sourcemap src/css/*.css --output-dir dist/css",
     "prebuild": "npm run clean",
     "build": "npm run build:docs && npm run build:css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,7 @@
   },
   "homepage": "https://github.com/ok-steve/normcore#readme",
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.8",
     "lightningcss-cli": "^1.33.0",
     "rimraf": "^6.0.1",
     "stylelint": "^16.6.0",

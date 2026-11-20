@@ -1,0 +1,38 @@
+---
+title: Form
+---
+
+<form>
+  <label for="text">Text input</label>
+  <input type="text" id="text" />
+  <label for="search">Search input</label>
+  <input type="search" id="search" />
+  <label for="disabled">Disabled input</label>
+  <input type="text" id="disabled" disabled />
+  <label for="select">Select</label>
+  <select name="select" id="select">
+    <option value="one">One</option>
+    <option value="two">Two</option>
+    <option value="three">Three</option>
+  </select>
+  <fieldset>
+    <legend>Radio legend</legend>
+    <input type="radio" name="radio" id="radio-1" />
+    <label for="radio-1">One</label>
+    <input type="radio" name="radio" id="radio-2" />
+    <label for="radio-2">Two</label>
+    <input type="radio" name="radio" id="radio-3" />
+    <label for="radio-3">Three</label>
+  </fieldset>
+  <fieldset>
+    <legend>Checkbox legend</legend>
+    <input type="checkbox" name="checkbox-1" id="checkbox-1" />
+    <label for="checkbox-1">One</label>
+    <input type="checkbox" name="checkbox-2" id="checkbox-2" />
+    <label for="checkbox-2">Two</label>
+    <input type="checkbox" name="checkbox-3" id="checkbox-3" />
+    <label for="checkbox-3">Three</label>
+  </fieldset>
+  <input type="submit" value="Submit" />
+  <button>Button</button>
+</form>

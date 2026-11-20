@@ -1,0 +1,11 @@
+---
+title: Frame
+---
+
+<div class="grid">
+  {% for size in ['1/1', '3/4', '4/3', '16/9'] %}
+    <div class="frame" style="--frame-size: {{ size }}">
+      <iframe src="/iframe.html"></iframe>
+    </div>
+  {% endfor %}
+</div>

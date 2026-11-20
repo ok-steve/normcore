@@ -1,0 +1,11 @@
+---
+title: Cover
+---
+
+<div style="--grid-columns: 3;" class="grid">
+  {% for direction in ['start', 'center', 'end'] %}
+    <div style="--cover-size: 5rlh; border: 1px solid" class="cover">
+      <div style="background-color: oklch(0.9 0 0);" class="cover--{{ direction }}">&nbsp;</div>
+    </div>
+  {% endfor %}
+</div>
