@@ -4,15 +4,6 @@
   "version": "0.0.0",
   "description": "An assertively basic web framework.",
   "style": "./dist/css/normcore.css",
-  "exports": {
-    ".": {
-      "import": "./src/js/normcore.js",
-      "default": "./dist/js/normcore.js"
-    },
-    "./js": {
-      "import": "./src/js"
-    }
-  },
   "scripts": {
     "clean": "rimraf dist",
     "lint": "stylelint src/css",
@@ -29,8 +20,7 @@
     "url": "git+https://github.com/ok-steve/normcore.git"
   },
   "keywords": [
-    "css",
-    "javascript"
+    "css"
   ],
   "author": {
     "name": "Steve Cherry",
